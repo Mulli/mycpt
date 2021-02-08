@@ -1,0 +1,642 @@
+{
+    "key": "group_5ff421a52a59c",
+    "title": "דו\"ח ביצוע חלק 2 - תאור המענה",
+    "fields": [
+        {
+            "key": "field_5ff421a5322eb",
+            "label": "דוח ביצוע חלק 2",
+            "name": "report-part-2",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ff421c92aae8",
+                    "label": "קבוצה תאור המענה",
+                    "name": "fg_desc",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff421c92aae9",
+                            "label": "תיאור המענה",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaea",
+                            "label": "תאור כללי של המענה",
+                            "name": "wp_description",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5ff421c92aaeb",
+                            "label": "סוג המענה",
+                            "name": "wp_solution_type",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "תכנית": "תכנית",
+                                "סדנה\/קורס": "סדנה\/קורס",
+                                "אירוע": "אירוע"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaec",
+                            "label": "תחום המענה",
+                            "name": "wp_solution_area",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "שילוב בעולם התעסוקה": "שילוב בעולם התעסוקה",
+                                "מיזמים עם מעסיקים": "מיזמים עם מעסיקים",
+                                "שיווק והסברה": "שיווק והסברה",
+                                "מענה משלים לתעסוקה": "מענה משלים לתעסוקה",
+                                "אחר": "אחר"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaed",
+                            "label": "תחום מענה - אחר",
+                            "name": "wp_solution_area_other",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaec",
+                                        "operator": "==",
+                                        "value": "אחר"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ff421c92aaee",
+                                    "label": "תחום מענה - \"אחר\"",
+                                    "name": "wp_solution_area_other_goal",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ff421c92aaef",
+                                    "label": "מדדים וערכי סף רצויים",
+                                    "name": "wp_solution_area_other_table",
+                                    "type": "repeater",
+                                    "instructions": "ניתן להוסיף מדד בלחיצה על כפתור \"הוספת שורה חדשה\". כל מדד יופיע בשורה נפרדת.:<BR>\r\n<strong>מספר<\/strong> - כמות המשתתפים שישפרו מצבם במידה כלשהי<BR>\r\n<strong>עוצמה<\/strong> - כמות המשתתפים שישפרו מצבם במידה טובה ומעלה<BR>\r\n יש להימנע משדות ריקים.",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 1,
+                                    "max": 5,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": []
+                                },
+                                {
+                                    "key": "field_5ff421c92aaf0",
+                                    "label": "הערות למטרה\/יעד שהוספת",
+                                    "name": "wp_solution_area_other_table_comments",
+                                    "type": "textarea",
+                                    "instructions": "אין חובה למלא.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "new_lines": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5ff421c92aaf1",
+                            "label": "סטטוס המענה",
+                            "name": "wp_status_new",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "מענה חדש": "מענה חדש",
+                                "מענה ממשיך": "מענה ממשיך",
+                                "מענה בפיילוט": "מענה בפיילוט",
+                                "אחר": "אחר"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaf2",
+                            "label": "סטטוס אחר למענה",
+                            "name": "wp_status_new_other",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf1",
+                                        "operator": "==",
+                                        "value": "אחר"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5ff421c92aaf3",
+                            "label": "סטטוס ההפעלה של המענה",
+                            "name": "wp_operation_status",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "טיוטה": "טיוטה",
+                                "ממתין לאישור": "ממתין לאישור",
+                                "מאושר וממתין להפעלה": "מאושר וממתין להפעלה",
+                                "מאושר ופועל": "מאושר ופועל",
+                                "הסתיים": "הסתיים"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ff421c92aaf4",
+                            "label": "מיקום פיזי של הפעילות",
+                            "name": "wp_geo_area_new",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "באזור אחד לפחות": "באזור אחד לפחות",
+                                "בשכונה אחת לפחות": "בשכונה אחת לפחות",
+                                "במרכז תעסוקה": "במרכז תעסוקה",
+                                "מקוון": "מקוון"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaf5",
+                            "label": "המרכז(ים) בהם פועל המענה",
+                            "name": "wp_geo_area_center_location",
+                            "type": "checkbox",
+                            "instructions": "יש לבחור מרכז אחד או יותר, בהם פועל המענה",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf4",
+                                        "operator": "==",
+                                        "value": "במרכז תעסוקה"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "אפיקי הצלחה": "אפיקי הצלחה",
+                                "הפלוס בשישים": "הפלוס בשישים",
+                                "קעליטה": "קעליטה",
+                                "מרכז הזדמנות": "מרכז הזדמנות",
+                                "מרכז כיוון": "מרכז כיוון",
+                                "מרכז צעירים": "מרכז צעירים",
+                                "מרכז ריאן": "מרכז ריאן",
+                                "מרכז הקריירה באוניברסיטה העברית": "מרכז הקריירה באוניברסיטה העברית",
+                                "מרכז לתעסוקת אקדמאים וסטודנטים": "מרכז לתעסוקת אקדמאים וסטודנטים",
+                                "רכזי תעסוקה בשכונות": "רכזי תעסוקה בשכונות",
+                                "מטה הרשות העירונית לתעסוקה": "מטה הרשות העירונית לתעסוקה"
+                            },
+                            "allow_custom": 0,
+                            "save_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5ff421c92aaf6",
+                            "label": "אזור בעיר",
+                            "name": "wp_geo_area_part",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf4",
+                                        "operator": "==",
+                                        "value": "באזור אחד לפחות"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "צפון": "צפון",
+                                "מזרח": "מזרח",
+                                "דרום": "דרום",
+                                "מערב": "מערב"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "horizontal",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaf7",
+                            "label": "פעילות שכונתית",
+                            "name": "wp_geo_area_location",
+                            "type": "checkbox",
+                            "instructions": "יש לבחור אזור כדי לסמן את השכונות הרצויות.<BR>\r\nניתן לבחור מספר אזורים ומספר שכונות בתוכם.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf4",
+                                        "operator": "==",
+                                        "value": "בשכונה אחת לפחות"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "צפון": "צפון",
+                                "דרום": "דרום",
+                                "מזרח": "מזרח",
+                                "מערב": "מערב"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "horizontal",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaf8",
+                            "label": "פעילות שכונתית צפון",
+                            "name": "wp_geo_area_location_north",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf7",
+                                        "operator": "==",
+                                        "value": "צפון"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "רמות אלון": "רמות אלון",
+                                "גאולה": "גאולה",
+                                "בוכרים": "בוכרים",
+                                "גבעת שאול": "גבעת שאול",
+                                "רמת שלמה": "רמת שלמה",
+                                "שכולות - רמת אשכול, שמואל הנביא, סנהנדריה": "שכולות - רמת אשכול, שמואל הנביא, סנהנדריה",
+                                "מעלות דפנה": "מעלות דפנה",
+                                "החומה השלישית": "החומה השלישית",
+                                "גבעה צרפתית": "גבעה צרפתית",
+                                "מורשה-מוסררה": "מורשה-מוסררה",
+                                "נווה יעקב": "נווה יעקב",
+                                "פסגת זאב": "פסגת זאב"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aaf9",
+                            "label": "פעילות שכונתית דרום",
+                            "name": "wp_geo_area_location_south",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf7",
+                                        "operator": "==",
+                                        "value": "דרום"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "מושבה גרמנית - גינות העיר": "מושבה גרמנית - גינות העיר",
+                                "בקעה": "בקעה",
+                                "תלפיות": "תלפיות",
+                                "גוננים - קטמונים גונן א-ח": "גוננים - קטמונים גונן א-ח"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aafa",
+                            "label": "פעילות שכונתית מזרח",
+                            "name": "wp_geo_area_location_east",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf7",
+                                        "operator": "==",
+                                        "value": "מזרח"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "א-טור": "א-טור",
+                                "באב א-זהרה": "באב א-זהרה",
+                                "בית חנינה": "בית חנינה",
+                                "ג'בל מוכבר": "ג'בל מוכבר",
+                                "שייח ג'ראח": "שייח ג'ראח",
+                                "אום טובה": "אום טובה",
+                                "בית צפפה": "בית צפפה",
+                                "ואדי ג'וז": "ואדי ג'וז",
+                                "עיסאוויה": "עיסאוויה",
+                                "צור באהר": "צור באהר",
+                                "שועפט": "שועפט",
+                                "כפר עקב": "כפר עקב",
+                                "סמירה מיס": "סמירה מיס",
+                                "מחנה פליטים שועפט": "מחנה פליטים שועפט",
+                                "עיר עתיקה - רובע נוצרי, ארמני ומוסלמי": "עיר עתיקה - רובע נוצרי, ארמני ומוסלמי",
+                                "סלאח אדין (מוסררה)": "סלאח אדין (מוסררה)",
+                                "סילוואן": "סילוואן",
+                                "ראס אל עמוד": "ראס אל עמוד",
+                                "אבו טור": "אבו טור",
+                                "ואדי קדים": "ואדי קדים",
+                                "אום ליסון": "אום ליסון",
+                                "שרפט": "שרפט"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aafb",
+                            "label": "פעילות שכונתית מערב",
+                            "name": "wp_geo_area_location_west",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff421c92aaf7",
+                                        "operator": "==",
+                                        "value": "מערב"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "גבעת משואה": "גבעת משואה",
+                                "גילה": "גילה",
+                                "הרובע היהודי": "הרובע היהודי",
+                                "נחלאות - מרכז לב העיר": "נחלאות - מרכז לב העיר",
+                                "קרייית מנחם": "קרייית מנחם",
+                                "לב העיר": "לב העיר",
+                                "בית הכרם": "בית הכרם",
+                                "הר חומה": "הר חומה",
+                                "תלפיות מזרח": "תלפיות מזרח",
+                                "ארמון הנציב": "ארמון הנציב",
+                                "בית וגן": "בית וגן",
+                                "הר נוף": "הר נוף",
+                                "רוממה": "רוממה",
+                                "קריית יובל": "קריית יובל"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff421c92aafc",
+                            "label": "התאמה להפעלה מקוונת",
+                            "name": "wp_online_new2",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "כן, באופן מלא": "כן, באופן מלא",
+                                "כן, באופן חלקי": "כן, באופן חלקי",
+                                "לא": "לא"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_workplansruns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610191780
+}

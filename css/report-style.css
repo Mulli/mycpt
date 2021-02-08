@@ -1,0 +1,60 @@
+/* Mbo report style */
+/* Assistant font loaded in theme */
+.entry-title,
+.chartjs-render-monitor{
+    animation:none
+}
+.mbo-value{
+    border-left:3px solid #cdcdcd;
+    margin-left:5px;
+}
+section { 
+    margin-top: 30px; 
+    border-top:1px solid #cdcdcd;
+    padding-top:20px;
+    text-align:center;
+}
+.page-content {
+    font-family: Assistant;
+}
+
+.report-title{
+    text-align: center;
+    direction:rtl;
+    padding-top: 2em;
+}
+.end-report {
+    padding:30px;
+    text-align:center;
+    font-size:24px;
+}
+.report-menu-item{
+    text-decoration:none;
+    color: #333;
+}
+.report-menu-item:hover{
+    color: rgb(73, 36, 175);
+    background: #efefef;
+    font-weight: bold;
+}
+.gotoTop {
+    position: absolute;
+    left: 75%;
+}
+.gotoTop a{
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    padding: 6px 12px;
+    background: #cdcdcd;
+    border-radius: 50%;
+}
+.gotoTop a:hover{
+    color: #cdcdcd;
+    background: rgb(2, 85, 33);
+}
+.mbo-draw{
+    height:400px;
+    width:600px;
+    margin: 0 auto;
+}

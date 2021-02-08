@@ -1,0 +1,538 @@
+{
+    "key": "group_5ff3589027949",
+    "title": "דו\"ח ביצוע חלק 4 - קהל יעד",
+    "fields": [
+        {
+            "key": "field_5ff3589043659",
+            "label": "דוח ביצוע חלק 4 - קהל יעד",
+            "name": "fg_target",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ff35891734d2",
+                    "label": "קהל היעד במחזור הנוכחי",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5ff35891771f1",
+                    "label": "גיל מינימלי",
+                    "name": "wp_min_age",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "מספר בין 18 ל 120",
+                    "prepend": "",
+                    "append": "",
+                    "min": 18,
+                    "max": 120,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ff358917adb0",
+                    "label": "גיל מקסימלי",
+                    "name": "wp_max_age",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "מספר בין 18 ל 120",
+                    "prepend": "",
+                    "append": "",
+                    "min": 18,
+                    "max": 120,
+                    "step": 1
+                },
+                {
+                    "key": "field_5ff358917e8de",
+                    "label": "מגזר",
+                    "name": "wp_social_section_new",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "פתוח לכל": "פתוח לכל",
+                        "כללי (חילוני, מסורתי, דתי)": "כללי (חילוני, מסורתי, דתי)",
+                        "ערבי": "ערבי",
+                        "חרדי": "חרדי"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5ff35891822a7",
+                    "label": "מגדר",
+                    "name": "wp_gender_new",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "גברים ונשים": "גברים ונשים",
+                        "גברים בלבד": "גברים בלבד",
+                        "נשים בלבד": "נשים בלבד",
+                        "אחר": "אחר"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ff3589185cad",
+                    "label": "אפיון אחר למגדר",
+                    "name": "wp_gender_new_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ff35891822a7",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ff35891899ca",
+                    "label": "ארץ לידה",
+                    "name": "wp_born_country",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "ישראל": "ישראל",
+                        "עולים חדשים": "עולים חדשים",
+                        "יוצאי אתיופיה": "יוצאי אתיופיה",
+                        "כולם": "כולם"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5ff358918d3c0",
+                    "label": "סטטוס תעסוקתי",
+                    "name": "wp_work_status",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "עובדים": "עובדים",
+                        "מובטלים וותיקים": "מובטלים וותיקים",
+                        "מובטלים חדשים אחרי מרץ 2020": "מובטלים חדשים אחרי מרץ 2020",
+                        "חל\"ת": "חל\"ת",
+                        "כולם": "כולם"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5ff3589190d5a",
+                    "label": "לבעלי נסיון תעסוקתי",
+                    "name": "wp_has_work_experience",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "כן": "כן",
+                        "לא": "לא"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ff358919492d",
+                    "label": "למשדרגי עבודה",
+                    "name": "wp_work_upgrade",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "להם בלבד": "להם בלבד",
+                        "גם להם": "גם להם",
+                        "לא למשדרגי עבודה": "לא למשדרגי עבודה"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ff358919872c",
+                    "label": "למוכרים לרווחה",
+                    "name": "wp_known2revaha",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "להם בלבד": "להם בלבד",
+                        "גם להם": "גם להם",
+                        "לא למוכרים בלשכה": "לא למוכרים בלשכה"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ff358919c053",
+                    "label": "רמת השכלה",
+                    "name": "wp_education_level",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "לא סיימו 12 שנות לימוד": "לא סיימו 12 שנות לימוד",
+                        "סיימו 12 שנות לימוד": "סיימו 12 שנות לימוד",
+                        "תעודת בגרות": "תעודת בגרות",
+                        "תעודת מקצוע": "תעודת מקצוע",
+                        "לימודים גבוהים": "לימודים גבוהים"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ff358919fc88",
+                    "label": "סוג לימודי תעודה",
+                    "name": "wp_diploma_type",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ff358919c053",
+                                "operator": "==",
+                                "value": "תעודת מקצוע"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ff35891a369d",
+                    "label": "פירוט לימודים גבוהים",
+                    "name": "wp_education_details",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ff358919c053",
+                                "operator": "==",
+                                "value": "לימודים גבוהים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "סטודנטים להנדסאים": "סטודנטים להנדסאים",
+                        "הנדסאים": "הנדסאים",
+                        "סטודנטים לתואר ראשון": "סטודנטים לתואר ראשון",
+                        "בעלי תואר ראשון": "בעלי תואר ראשון",
+                        "מהנדסים": "מהנדסים",
+                        "סטודנטים לתואר שני": "סטודנטים לתואר שני",
+                        "בעלי תואר שני ומעלה": "בעלי תואר שני ומעלה"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5ff35891a7120",
+                    "label": "לימודים אחרים",
+                    "name": "wp_diploma_other_type",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "כמו רבני וכו'",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ff35891aabf9",
+                    "label": "התאמה לאוכלוסיות נוספות",
+                    "name": "wp_communities",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "גברים": "גברים",
+                        "נשים": "נשים",
+                        "סטודנטים": "סטודנטים",
+                        "עולים חדשים": "עולים חדשים",
+                        "יוצאי אתיופיה": "יוצאי אתיופיה",
+                        "ערבים": "ערבים",
+                        "חרדים": "חרדים",
+                        "בעלי מוגבלויות": "בעלי מוגבלויות",
+                        "מעסיקים": "מעסיקים",
+                        "אזרחים ותיקים": "אזרחים ותיקים",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5ff35891ae93d",
+                    "label": "התאמה לאוכלוסיות - \"אחר\"",
+                    "name": "wp_communities_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ff35891aabf9",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ff35891b23f5",
+                    "label": "שפת דיבור",
+                    "name": "wp_communities_lang",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ff35891aabf9",
+                                "operator": "==",
+                                "value": "עולים חדשים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "אנגלית": "אנגלית",
+                        "צרפתית": "צרפתית",
+                        "ספרדית": "ספרדית",
+                        "רוסית": "רוסית",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5ff35891b5e93",
+                    "label": "שפות אחר",
+                    "name": "wp_communities_lang_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ff35891b23f5",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_workplansruns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610193184
+}

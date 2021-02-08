@@ -1,0 +1,314 @@
+{
+    "key": "group_5ff595c648e03",
+    "title": "דו\"ח ביצוע חלק 6 - מתכונת ותדירות",
+    "fields": [
+        {
+            "key": "field_5ff595c650abc",
+            "label": "דו\"ח ביצוע חלק 6 - תדירות",
+            "name": "report-part-6",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ff595c666ffb",
+                    "label": "קבוצת מתכונת ומרכיבי המענה",
+                    "name": "fg_wp_components",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff595c96e26a",
+                            "label": "מרכיבי התכנית",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff595c971c8b",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ff9c3b0aa8bd",
+                            "label": "רכיבי התכנית",
+                            "name": "wp_component_table_2",
+                            "type": "repeater",
+                            "instructions": "נא לפרט כל קורס, סדנה או כל פעילות אחרת הנכללת בתכנית",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 20,
+                            "layout": "table",
+                            "button_label": "הוספת רכיב לתוכנית",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5ff9c3b0aa8be",
+                                    "label": "רכיב",
+                                    "name": "wp_component_table_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5ff9c3b0aa8bf",
+                                    "label": "אופן העברה",
+                                    "name": "wp_component_table_type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "1. פרטני": "1. פרטני",
+                                        "2. קבוצתי": "2. קבוצתי",
+                                        "3. כנס": "3. כנס",
+                                        "4. יריד": "4. יריד",
+                                        "5. זרקור": "5. זרקור",
+                                        "6. אירוע חד פעמי": "6. אירוע חד פעמי",
+                                        "7. שירות": "7. שירות",
+                                        "8. סדנה": "8. סדנה",
+                                        "9. קורס": "9. קורס",
+                                        "10. אימון": "10. אימון"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5ff9c3b0aa8c0",
+                                    "label": "מס. שעות אקדמיות",
+                                    "name": "wp_component_table_number",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5ff595c975b5f",
+                            "label": "מתכונת המחזור הנוכחי",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ff595c979797",
+                            "label": "מספר מפגשים",
+                            "name": "wp_n_meetings",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ff595c97d209",
+                            "label": "תדירות מפגשים",
+                            "name": "wp_meet_freq",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "משתנה": "משתנה",
+                                "חד פעמי": "חד פעמי",
+                                "פעם בשבוע": "פעם בשבוע",
+                                "פעמיים בשבוע": "פעמיים בשבוע",
+                                "אחת לשבועיים": "אחת לשבועיים",
+                                "אחת לחודש": "אחת לחודש",
+                                "אחר": "אחר"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ff595c980e21",
+                            "label": "תדירות מפגשים אחר",
+                            "name": "wp_meet_freq_other",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff595c97d209",
+                                        "operator": "==",
+                                        "value": "אחר"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ff595c984760",
+                            "label": "מספר שעות אקדמיות במפגש",
+                            "name": "wp_meetings_length",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 1,
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ff595c98839e",
+                            "label": "מספר שעות אקדמיות כולל",
+                            "name": "wp_meetings_totalh",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 1,
+                            "max": "",
+                            "step": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_workplansruns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610205202
+}

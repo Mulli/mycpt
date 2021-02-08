@@ -1,0 +1,44 @@
+[
+    {
+        "id": 11034,
+        "title": {
+            "rendered": "אלבז ליטל חיים"
+        },
+        "acf": {
+            "_date": "9\/7\/2019",
+            "_family_name": "אלבז",
+            "_woman_firstname": "ליטל",
+            "_man_firstname": "חיים",
+            "_code": "11034",
+            "_family_code": "0",
+            "_team": "מיטל",
+            "_status": "ברור עם גורם מפנה",
+            "_cell_woman": "",
+            "_cell_man": "",
+            "_initiator": "שני עוצמה",
+            "_age_woman": "",
+            "_age_man": "",
+            "_merita_status": "נשואים",
+            "_num_kids": "",
+            "family_refferal_woman_workplace": "",
+            "family_refferal_man_workplace": "",
+            "_debts": "",
+            "_os_client": "",
+            "_prev_plan": false,
+            "_prev_plan_name": "",
+            "_phone_call": false,
+            "_intake_set": false,
+            "_intake_date": "",
+            "_r1": "",
+            "_r2": "",
+            "_r3": "",
+            "_r4": "",
+            "_r5": "",
+            "_r6": "",
+            "_mgr_decision": "",
+            "_family_decision": "",
+            "_mgr_explain": "",
+            "_family_explain": ""
+        }
+    }
+]

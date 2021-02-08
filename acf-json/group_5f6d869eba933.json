@@ -1,0 +1,3644 @@
+{
+    "key": "group_5f6d869eba933",
+    "title": "מאגר תוכניות עבודה - בדיקה",
+    "fields": [
+        {
+            "key": "field_5f6d869ebf028",
+            "label": "מאגר תוכניות - הגדרה",
+            "name": "workplans_plan",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5f6d869ec06ad",
+                    "label": "פרטי התכנית",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5f6d869ec072e",
+                    "label": "קוד מזהה",
+                    "name": "wp_id",
+                    "type": "text",
+                    "instructions": "אין חובה למלא",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "לשימוש משרדי",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 1
+                },
+                {
+                    "key": "field_5f6d869ec07ae",
+                    "label": "שם התכנית",
+                    "name": "wp_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec082e",
+                    "label": "מרכז התעסוקה במסגרתו פועלת התכנית",
+                    "name": "wp_centers",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מרכז צעירים": "מרכז צעירים",
+                        "מרכז ריאן": "מרכז ריאן",
+                        "מרכז לתעסוקת אקדמאים וסטודנטים": "מרכז לתעסוקת אקדמאים וסטודנטים",
+                        "קעליטה": "קעליטה",
+                        "מרכז הזדמנות": "מרכז הזדמנות",
+                        "מרכז כיוון": "מרכז כיוון",
+                        "מרכז קריירה": "מרכז קריירה",
+                        "הפלוס בשישים": "הפלוס בשישים",
+                        "רכזי תעסוקה בשכונות": "רכזי תעסוקה בשכונות",
+                        "מטה הרשות העירונית לתעסוקה": "מטה הרשות העירונית לתעסוקה",
+                        "אחר": "אחר"
+                    },
+                    "default_value": false,
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f6d869ec08ac",
+                    "label": "תאריך הגדרת התכנית",
+                    "name": "wp_create_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "display_format": "d\/m\/Y",
+                    "return_format": "d\/m\/Y",
+                    "first_day": 0
+                },
+                {
+                    "key": "field_5f6d869ec092b",
+                    "label": "תאריך עדכון התוכנית",
+                    "name": "wp_modified_date",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec072e",
+                                "operator": "==",
+                                "value": "11111"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec09a8",
+                    "label": "שם כותב\/ת התכנית",
+                    "name": "wp_author",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec0a25",
+                    "label": "תפקיד כותב\/ת התכנית",
+                    "name": "wp_author_role",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מנהל\/ת במרכז": "מנהל\/ת במרכז",
+                        "מנהל\/ת במטה הרשות העירונית לתעסוקה": "מנהל\/ת במטה הרשות העירונית לתעסוקה",
+                        "רכז\/ת תעסוקה בשכונות": "רכז\/ת תעסוקה בשכונות",
+                        "עובד\/ת הרשות העירונית לתעסוקה": "עובד\/ת הרשות העירונית לתעסוקה"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f6d869ec0aa3",
+                    "label": "אחראי\/ת מטעם הרשות",
+                    "name": "wp_responsible",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec0b22",
+                    "label": "טלפון אחראי מטעם הרשות",
+                    "name": "wp_responsible_phone",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec0ba2",
+                    "label": "דוא\"ל אחראי מטעם הרשות",
+                    "name": "wp_responsible_email",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec0c22",
+                    "label": "המפעיל-ספק של התוכנית",
+                    "name": "wp_operator",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6db080c1dcb",
+                    "label": "ערוץ התוכנית",
+                    "name": "wp_channel",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "תכניות להכנה ושילוב בעולם העבודה": "תכניות להכנה ושילוב בעולם העבודה",
+                        "אירועים עם מעסיקים לגיוס עובדים": "אירועים עם מעסיקים לגיוס עובדים",
+                        "מפגשי חשיפה, הרצאות וכנסים": "מפגשי חשיפה, הרצאות וכנסים"
+                    },
+                    "default_value": false,
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f6dfbf11d787",
+                    "label": "ערוץ 1 - הכנה ושילוב בעולם העבודה",
+                    "name": "wp_channel_1",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6db080c1dcb",
+                                "operator": "==",
+                                "value": "תכניות להכנה ושילוב בעולם העבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "השמה": "השמה",
+                        "שדרוג תעסוקתי": "שדרוג תעסוקתי",
+                        "הכשרה מקצועית (לימודי תעודה)": "הכשרה מקצועית (לימודי תעודה)",
+                        "שדרוג מקצועי": "שדרוג מקצועי",
+                        "רכישת\/השלמת השכלה בסיסית (עד בגרות)": "רכישת\/השלמת השכלה בסיסית (עד בגרות)",
+                        "העלאת רמת השכלה (השכלה גבוהה)": "העלאת רמת השכלה (השכלה גבוהה)",
+                        "I AM פיתוח מיומנויות רכות אישיות (מאפשרים פנימיים)": "I AM פיתוח מיומנויות רכות אישיות (מאפשרים פנימיים)",
+                        "I CAN - פיתוח מיומנויות תשתית": "I CAN - פיתוח מיומנויות תשתית",
+                        "I BUILD - רכישת מיומנויות ניהול עצמי": "I BUILD - רכישת מיומנויות ניהול עצמי",
+                        "I GROW - למידה והתעדכנות מתמדת": "I GROW - למידה והתעדכנות מתמדת",
+                        "I MIX - רכישת מיומנויות ניהול יחסים בין אישיים ומסוגלות תרבותית לעולם התעסוקה": "I MIX - רכישת מיומנויות ניהול יחסים בין אישיים ומסוגלות תרבותית לעולם התעסוקה",
+                        "I NET - רכישת מיומנויות רישות ומיתוג חברתי תעסוקתי": "I NET - רכישת מיומנויות רישות ומיתוג חברתי תעסוקתי",
+                        "העשרת שפה (לתכניות להעשרת שפה בלבד)": "העשרת שפה (לתכניות להעשרת שפה בלבד)",
+                        "רכישת מיומנויות מחשב (לתכניות למיומנויות מחשב בלבד)": "רכישת מיומנויות מחשב (לתכניות למיומנויות מחשב בלבד)"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6dfd051d788",
+                    "label": "ערוץ 2 - אירועים עם מעסיקים לגיוס עובדים",
+                    "name": "wp_channel_2",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6db080c1dcb",
+                                "operator": "==",
+                                "value": "אירועים עם מעסיקים לגיוס עובדים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "פתיחת עסק חדש": "פתיחת עסק חדש",
+                        "מינוף ותמיכה לעסקים קיימים - חיזוק ותמיכה": "מינוף ותמיכה לעסקים קיימים - חיזוק ותמיכה",
+                        "עידוד יזמות עסקית (עידוד יוזמות פרטיות לאנשים ולעסקים)": "עידוד יזמות עסקית (עידוד יוזמות פרטיות לאנשים ולעסקים)",
+                        "מיזמים ייעודיים עם מעסיקים לשילוב אוכלוסיות מגוונות בשוק התעסוקה": "מיזמים ייעודיים עם מעסיקים לשילוב אוכלוסיות מגוונות בשוק התעסוקה",
+                        "סיוע למעסיק בהכשרה או גיוס כוח אדם": "סיוע למעסיק בהכשרה או גיוס כוח אדם"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6dfd721d789",
+                    "label": "ערוץ 3 - מפגשי חשיפה, הרצאות וכנסים",
+                    "name": "wp_channel_3",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6db080c1dcb",
+                                "operator": "==",
+                                "value": "מפגשי חשיפה, הרצאות וכנסים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מפגשי חשיפה": "מפגשי חשיפה",
+                        "הרצאות": "הרצאות",
+                        "כנסים": "כנסים"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec0ca0",
+                    "label": "סוג התוכנית",
+                    "name": "wp_type_new",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "תעסוקה והשמה אישית": "תעסוקה והשמה אישית",
+                        "קידום תעסוקה": "קידום תעסוקה",
+                        "הקמת עסק": "הקמת עסק",
+                        "הכשרה מקצועית": "הכשרה מקצועית",
+                        "הכשרה אקדמית": "הכשרה אקדמית",
+                        "השלמת השכלה": "השלמת השכלה",
+                        "לימודי שפה": "לימודי שפה",
+                        "הקניית מיומנויות וכישורים לעולם התעסוקה": "הקניית מיומנויות וכישורים לעולם התעסוקה",
+                        "אימון אישי וקריירה": "אימון אישי וקריירה",
+                        "ליווי מעסיקים": "ליווי מעסיקים",
+                        "מפגש חשיפה": "מפגש חשיפה",
+                        "אחר": "אחר"
+                    },
+                    "default_value": false,
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f6d869ec0d1e",
+                    "label": "תאור כללי התוכנית",
+                    "name": "wp_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5f6d869ec0d9c",
+                    "label": "סטטוס התוכנית",
+                    "name": "wp_status_new",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "תכנית חדשה": "תכנית חדשה",
+                        "תכנית ממשיכה": "תכנית ממשיכה",
+                        "תכנית בפיילוט": "תכנית בפיילוט",
+                        "other": "other"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 1,
+                    "save_other_choice": 1,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec0e1b",
+                    "label": "סטטוס ההפעלה של התוכנית",
+                    "name": "wp_operation_status",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "טיוטה": "טיוטה",
+                        "ממתינה לאישור": "ממתינה לאישור",
+                        "מאושרת וממתינה להפעלה": "מאושרת וממתינה להפעלה",
+                        "מאושרת ופועלת": "מאושרת ופועלת",
+                        "הסתיימה": "הסתיימה"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f6d869ec0e99",
+                    "label": "מיומנויות ורכיבים נרכשים",
+                    "name": "wp_skills_acquired_new",
+                    "type": "checkbox",
+                    "instructions": "ניתן לסמן מספר אפשרויות. בהקשה על התא יפתחו אפשרויות לבחירה. נא לסמן את המתאימות.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "העשרת שפה": "העשרת שפה",
+                        "מיומנויות מחשב": "מיומנויות מחשב",
+                        "I AM - מאפשרים פנימיים": "I AM - מאפשרים פנימיים",
+                        "I CAN - מיומנויות תשתית": "I CAN - מיומנויות תשתית",
+                        "I BUILD - ניהול עצמי": "I BUILD - ניהול עצמי",
+                        "I GROW - למידה והתעדכנות מתמדת": "I GROW - למידה והתעדכנות מתמדת",
+                        "I MIX - יחסים בין אישיים ומסוגלות תרבותית": "I MIX - יחסים בין אישיים ומסוגלות תרבותית",
+                        "I NET - רישות ומיתוג חברתי תעסוקתי": "I NET - רישות ומיתוג חברתי תעסוקתי"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec0f19",
+                    "label": "העשרת שפה",
+                    "name": "wp_skills_acq_languages",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "העשרת שפה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "אנגלית": "אנגלית",
+                        "עברית": "עברית"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec0f99",
+                    "label": "מיומנויות מחשב",
+                    "name": "wp_skills_acq_computer",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "מיומנויות מחשב"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "הכרת המחשב": "הכרת המחשב",
+                        "אופיס": "אופיס",
+                        "לינקדאין": "לינקדאין",
+                        "תקשורת": "תקשורת",
+                        "תכנות": "תכנות"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1018",
+                    "label": "I AM - מאפשרים פנימיים",
+                    "name": "wp_skills_acq_iam",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "I AM - מאפשרים פנימיים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מוטיבציה": "מוטיבציה",
+                        "גישה חיובית ופרואקטיבית": "גישה חיובית ופרואקטיבית",
+                        "חוללות עצמית": "חוללות עצמית"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1097",
+                    "label": "I CAN - מיומנויות תשתית",
+                    "name": "wp_skills_acq_ican",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "I CAN - מיומנויות תשתית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "יכולת לבצע משימות ולנהל תקשורת בכלים דיגיטליים": "יכולת לבצע משימות ולנהל תקשורת בכלים דיגיטליים",
+                        "יכולת לקרוא, לכתוב ולהציג נושא בעברית ובאנגלית": "יכולת לקרוא, לכתוב ולהציג נושא בעברית ובאנגלית",
+                        "יכולת להבין ולקבל החלטות מבוססות נתונים": "יכולת להבין ולקבל החלטות מבוססות נתונים"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1116",
+                    "label": "I BUILD - ניהול עצמי",
+                    "name": "wp_skills_acq_ibuild",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "I BUILD - ניהול עצמי"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "יכולת לאזן בין עבודה ותחומי חיים נוספים WLB": "יכולת לאזן בין עבודה ותחומי חיים נוספים WLB",
+                        "יכולת פעולה מקורית ויצירתית במצבי שינוי ועמימות": "יכולת פעולה מקורית ויצירתית במצבי שינוי ועמימות",
+                        "יכולת ניהול זמן ותיעדוף משימות": "יכולת ניהול זמן ותיעדוף משימות"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1194",
+                    "label": "I GROW - למידה והתעדכנות מתמדת",
+                    "name": "wp_skills_acq_igrow",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "I GROW - למידה והתעדכנות מתמדת"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "יכולת לראות תמונת עתיד ומפת דרכים": "יכולת לראות תמונת עתיד ומפת דרכים",
+                        "יכולת רפלקציה אישית ולמידה מנסיון": "יכולת רפלקציה אישית ולמידה מנסיון",
+                        "יכולת ללמוד ולהתעדכן באופן מתמיד ועצמאי": "יכולת ללמוד ולהתעדכן באופן מתמיד ועצמאי"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1212",
+                    "label": "I MIX - יחסים בין אישיים ומסוגלות תרבותית",
+                    "name": "wp_skills_acq_imix",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "I MIX - יחסים בין אישיים ומסוגלות תרבותית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "יכולת לפעול בצוותים רב-תחומיים": "יכולת לפעול בצוותים רב-תחומיים",
+                        "יכולת לפעול בסביבה רב-תרבותית": "יכולת לפעול בסביבה רב-תרבותית",
+                        "יכולת לפעול במגוון מצבים בין-אישיים": "יכולת לפעול במגוון מצבים בין-אישיים"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1290",
+                    "label": "I NET - רישות ומיתוג חברתי תעסוקתי",
+                    "name": "wp_skills_acq_inet",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "I NET - רישות ומיתוג חברתי תעסוקתי"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "יכולת לפעול ולתקשר במגוון רשתות וקהילות": "יכולת לפעול ולתקשר במגוון רשתות וקהילות",
+                        "יכולת למתג ולשווק את עצמי": "יכולת למתג ולשווק את עצמי"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec130f",
+                    "label": "מטרות ויעדים של התוכנית",
+                    "name": "wp_goals_2",
+                    "type": "checkbox",
+                    "instructions": "ניתן לסמן מספר אפשרויות. בהקשה על התא יפתחו אפשרויות לבחירה. נא לסמן את המתאימות.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "השמה": "השמה",
+                        "הגדלת אחוז משרה": "הגדלת אחוז משרה",
+                        "שדרוג מקצועי": "שדרוג מקצועי",
+                        "רכישת מיומנות \/ השכלה": "רכישת מיומנות \/ השכלה",
+                        "העלאת רמת השכלה אישית": "העלאת רמת השכלה אישית",
+                        "פתיחת עסק": "פתיחת עסק",
+                        "חיזוק ותמיכה - מינוף וסיוע לעסקים קיימים": "חיזוק ותמיכה - מינוף וסיוע לעסקים קיימים",
+                        "עידוד יזמות עסקית": "עידוד יזמות עסקית",
+                        "עידוד מעסיקים לשילוב אוכלוסיות מגוונות בשוק העבודה": "עידוד מעסיקים לשילוב אוכלוסיות מגוונות בשוק העבודה",
+                        "שיפור תפקוד בעולם העבודה": "שיפור תפקוד בעולם העבודה",
+                        "סיוע למעסיק בהכשרה או גיוס כח אדם": "סיוע למעסיק בהכשרה או גיוס כח אדם",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec138e",
+                    "label": "מדדי השמה",
+                    "name": "wp_goals_hasama",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים - לכל מדד יש להוסיף יעד בשדה שיפתח",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "השמה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-hasama",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "השמה אישית של הפונה": "השמה אישית של הפונה",
+                        "הגדלת מספר \/ שיעור (%) משתתפי התכנית המושמים בעבודה": "הגדלת מספר \/ שיעור (%) משתתפי התכנית המושמים בעבודה",
+                        "הגדלת מספר \/ שיעור (%) המשתלבים בשוק העבודה": "הגדלת מספר \/ שיעור (%) המשתלבים בשוק העבודה"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec140d",
+                    "label": "ערך יעד להשמה אישית של הפונה",
+                    "name": "wp_goals_hasama_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec138e",
+                                "operator": "==",
+                                "value": "השמה אישית של הפונה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-hasama",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": ""
+                },
+                {
+                    "key": "field_5f6d869ec148d",
+                    "label": "ערך יעד רצוי להגדלת מספר המושמים בשוק העבודה",
+                    "name": "wp_goals_hasama_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec138e",
+                                "operator": "==",
+                                "value": "הגדלת מספר \/ שיעור (%) משתתפי התכנית המושמים בעבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-hasama",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": ""
+                },
+                {
+                    "key": "field_5f6d869ec150c",
+                    "label": "ערך יעד להגדלת מספר המשתלבים בשוק העבודה",
+                    "name": "wp_goals_hasama_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec138e",
+                                "operator": "==",
+                                "value": "הגדלת מספר \/ שיעור (%) המשתלבים בשוק העבודהעבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-hasama",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": ""
+                },
+                {
+                    "key": "field_5f6d869ec158a",
+                    "label": "מדדי שדרוג תעסוקתי",
+                    "name": "wp_goals_upgrade",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "הגדלת אחוז משרה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-upgrade",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "שדרוג תעסוקתי אישי": "שדרוג תעסוקתי אישי",
+                        "שדרוג אישי בהכנסה": "שדרוג אישי בהכנסה",
+                        "מספר % משדרגי עבודה": "מספר % משדרגי עבודה",
+                        "מספר % משפרי הכנסה": "מספר % משפרי הכנסה"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec1608",
+                    "label": "ערך יעד לשדרוג תעסוקתי אישי",
+                    "name": "wp_goals_upgrade_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec158a",
+                                "operator": "==",
+                                "value": "שדרוג תעסוקתי אישי"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-upgrade",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": ""
+                },
+                {
+                    "key": "field_5f6d869ec1687",
+                    "label": "ערך יעד לשדרוג אישי בהכנסה",
+                    "name": "wp_goals_upgrade_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec158a",
+                                "operator": "==",
+                                "value": "שדרוג אישי בהכנסה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-upgrade",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": ""
+                },
+                {
+                    "key": "field_5f6d869ec1707",
+                    "label": "ערך יעד למספר משדרגי עבודה",
+                    "name": "wp_goals_upgrade_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec158a",
+                                "operator": "==",
+                                "value": "מספר % משדרגי עבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-upgrade",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": ""
+                },
+                {
+                    "key": "field_5f6d869ec1788",
+                    "label": "ערך יעד למספר משפרי הכנסה",
+                    "name": "wp_goals_upgrade_m4",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec158a",
+                                "operator": "==",
+                                "value": "מספר % משפרי הכנסה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-upgrade",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1813",
+                    "label": "החלפה למקצוע מתאים",
+                    "name": "wp_goals_change_prof",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "שדרוג מקצועי"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-change",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "שדרוג תעסוקתי אישי": "שדרוג תעסוקתי אישי",
+                        "שדרוג אישי בהכנסה": "שדרוג אישי בהכנסה",
+                        "מספר % משדרגי עבודה": "מספר % משדרגי עבודה",
+                        "מספר % משפרי הכנסה": "מספר % משפרי הכנסה"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec1893",
+                    "label": "ערך יעד לשדרוג תעסוקתי אישי",
+                    "name": "wp_goals_change_prof_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1813",
+                                "operator": "==",
+                                "value": "שדרוג תעסוקתי אישי"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-change",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1912",
+                    "label": "ערך יעד לשדרוג אישי בהכנסה",
+                    "name": "wp_goals_change_prof_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1813",
+                                "operator": "==",
+                                "value": "שדרוג אישי בהכנסה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-change",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1991",
+                    "label": "ערך יעד למספר % משדרגי עבודה",
+                    "name": "wp_goals_change_prof_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1813",
+                                "operator": "==",
+                                "value": "מספר % משדרגי עבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-change",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1a1f",
+                    "label": "ערך יעד למספר משפרי הכנסה",
+                    "name": "wp_goals_change_prof_m4",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1813",
+                                "operator": "==",
+                                "value": "מספר % משפרי הכנסה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-change",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1ab3",
+                    "label": "רכישת מיומנות-השכלה",
+                    "name": "wp_goals_skills",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "רכישת מיומנות \/ השכלה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-skills",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "העלאת רמת השכלה אישית": "העלאת רמת השכלה אישית",
+                        "הגדלת מספר מסיימי 12 שנ\"ל": "הגדלת מספר מסיימי 12 שנ\"ל",
+                        "הגדלת מספר מתחילים השכלה גבוהה": "הגדלת מספר מתחילים השכלה גבוהה",
+                        "הגדלת מספר מסיימים לימודי תואר": "הגדלת מספר מסיימים לימודי תואר",
+                        "Array": "Array"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec1b45",
+                    "label": "ערך יעד להעלאת רמת השכלה אישית",
+                    "name": "wp_goals_skills_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1ab3",
+                                "operator": "==",
+                                "value": "העלאת רמת השכלה אישית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-skills",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1bd4",
+                    "label": "ערך יעד להגדלת מספר מסיימי 12 שנ\"ל",
+                    "name": "wp_goals_skills_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1ab3",
+                                "operator": "==",
+                                "value": "הגדלת מספר מסיימי 12 שנ\"ל"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-skills",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1c67",
+                    "label": "ערך יעד להגדלת מספר מתחילים השכלה גבוהה",
+                    "name": "wp_goals_skills_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1ab3",
+                                "operator": "==",
+                                "value": "הגדלת מספר מתחילים השכלה גבוהה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-skills",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1cf3",
+                    "label": "ערך יעד להגדלת מספר מסיימים לימודי תואר",
+                    "name": "wp_goals_skills_m4",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1ab3",
+                                "operator": "==",
+                                "value": "הגדלת מספר מסיימים לימודי תואר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-skills",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1d7f",
+                    "label": "העלאת רמת השכלה אישית",
+                    "name": "wp_goals_personalk",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "העלאת רמת השכלה אישית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-personal",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "העלאת רמת השכלה אישית": "העלאת רמת השכלה אישית",
+                        "הגדלת מספר מסיימי 12 שנ\"ל": "הגדלת מספר מסיימי 12 שנ\"ל",
+                        "הגדלת מספר מתחילים השכלה גבוהה": "הגדלת מספר מתחילים השכלה גבוהה",
+                        "הגדלת מספר מסיימים לימודי תואר": "הגדלת מספר מסיימים לימודי תואר"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec1e0b",
+                    "label": "ערך יעד להעלאת רמת השכלה אישית",
+                    "name": "wp_goals_personalk_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1d7f",
+                                "operator": "==",
+                                "value": "העלאת רמת השכלה אישית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-personal",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1e9b",
+                    "label": "ערך יעד להגדלת מספר מסיימי 12 שנ\"ל",
+                    "name": "wp_goals_personalk_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1d7f",
+                                "operator": "==",
+                                "value": "הגדלת מספר מסיימי 12 שנ\"ל"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-personal",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1f2c",
+                    "label": "ערך יעד להגדלת מספר מתחילים השכלה גבוהה",
+                    "name": "wp_goals_personalk_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1d7f",
+                                "operator": "==",
+                                "value": "הגדלת מספר מתחילים השכלה גבוהה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-personal",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec1fb9",
+                    "label": "ערך יעד להגדלת מספר מסיימים לימודי תואר",
+                    "name": "wp_goals_personalk_m4",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec1d7f",
+                                "operator": "==",
+                                "value": "הגדלת מספר מסיימים לימודי תואר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-personal",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2046",
+                    "label": "פתיחת עסק",
+                    "name": "wp_goals_newbiz",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "פתיחת עסק"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-biz",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "הגדלת מספר פותחים עסק": "הגדלת מספר פותחים עסק",
+                        "הגדלת מספר משדרגים עסק": "הגדלת מספר משדרגים עסק",
+                        "מדד נוסף": "מדד נוסף"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec20d5",
+                    "label": "ערך יעד להגדלת מספר פותחים עסק",
+                    "name": "wp_goals_newbiz_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2046",
+                                "operator": "==",
+                                "value": "הגדלת מספר פותחים עסק"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-biz",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2162",
+                    "label": "ערך יעד להגדלת מספר משדרגים עסק",
+                    "name": "wp_goals_newbiz_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2046",
+                                "operator": "==",
+                                "value": "הגדלת מספר משדרגים עסק"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-biz",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec21f2",
+                    "label": "חיזוק ותמיכה",
+                    "name": "wp_goals_empower",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "חיזוק ותמיכה - מינוף וסיוע לעסקים קיימים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-empower",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "הגדלת מחזור עסקי של המשתתפים בתכנית": "הגדלת מחזור עסקי של המשתתפים בתכנית",
+                        "הגדלת מספר העסקים המצליחים להתקיים אחרי משבר": "הגדלת מספר העסקים המצליחים להתקיים אחרי משבר",
+                        "מספר העסקים המשתתפים ברשתות עסקיות לתמיכה ושיווק": "מספר העסקים המשתתפים ברשתות עסקיות לתמיכה ושיווק"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec227f",
+                    "label": "ערך יעד להגדלת מחזור עסקי של המשתתפים בתכנית",
+                    "name": "wp_goals_empower_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec21f2",
+                                "operator": "==",
+                                "value": "הגדלת מחזור עסקי של המשתתפים בתכנית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-empower",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec230b",
+                    "label": "ערך יעד להגדלת מספר העסקים המצליחים להתקיים אחרי משבר",
+                    "name": "wp_goals_empower_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec21f2",
+                                "operator": "==",
+                                "value": "הגדלת מספר העסקים המצליחים להתקיים אחרי משבר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-empower",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec239b",
+                    "label": "ערך יעד למספר העסקים המשתתפים ברשתות עסקיות לתמיכה ושיווק",
+                    "name": "wp_goals_empower_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec21f2",
+                                "operator": "==",
+                                "value": "מספר העסקים המשתתפים ברשתות עסקיות לתמיכה ושיווק"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-empower",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2427",
+                    "label": "עידוד יזמות עסקית",
+                    "name": "wp_goals_enterpreneour",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "עידוד יזמות עסקית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-enter",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מספר היזמים שמקימים עסק חדש": "מספר היזמים שמקימים עסק חדש",
+                        "מספר העסקים החדשים שנפתחים": "מספר העסקים החדשים שנפתחים"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec24af",
+                    "label": "ערך יעד למספר היזמים שמקימים עסק חדש",
+                    "name": "wp_goals_enterpreneour_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2427",
+                                "operator": "==",
+                                "value": "מספר היזמים שמקימים עסק חדש"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-enter",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec253c",
+                    "label": "ערך יעד למספר העסקים החדשים שנפתחים",
+                    "name": "wp_goals_enterpreneour_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2427",
+                                "operator": "==",
+                                "value": "מספר העסקים החדשים שנפתחים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-enter",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec25cc",
+                    "label": "עידוד מעסיקים לשילוב",
+                    "name": "wp_goals_employees",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "עידוד מעסיקים לשילוב אוכלוסיות מגוונות בשוק העבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-employee",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "הגדלת מספר האנשים בעלי מוגבלויות המשולבים בתעסוקה נתמכת": "הגדלת מספר האנשים בעלי מוגבלויות המשולבים בתעסוקה נתמכת",
+                        "הגדלת אוכלוסיות מגוונות בשוק התעסוקה (נשים, חרדים, ערבים, בעלי צרכים מיוחדים)": "הגדלת אוכלוסיות מגוונות בשוק התעסוקה (נשים, חרדים, ערבים, בעלי צרכים מיוחדים)"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec265c",
+                    "label": "ערך יעד להגדלת מספר האנשים בעלי מוגבלויות המשולבים בתעסוקה נתמכת",
+                    "name": "wp_goals_employees_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec25cc",
+                                "operator": "==",
+                                "value": "הגדלת מספר האנשים בעלי מוגבלויות המשולבים בתעסוקה נתמכת"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-employee",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec26e9",
+                    "label": "ערך יעד להגדלת אוכלוסיות מגוונות בשוק התעסוקה (נשים, חרדים, ערבים, בעלי צרכים מיוחדים)",
+                    "name": "wp_goals_employees_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec25cc",
+                                "operator": "==",
+                                "value": "הגדלת אוכלוסיות מגוונות בשוק התעסוקה (נשים, חרדים, ערבים, בעלי צרכים מיוחדים)"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-employee",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec277b",
+                    "label": "שיפור תפקוד בעולם התעסוקה",
+                    "name": "wp_goals_improvework",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "שיפור תפקוד בעולם העבודה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-improve",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מספר המסיימים הכשרות לעבודה אשר שולבו בעבודה בתחום הכשרתם": "מספר המסיימים הכשרות לעבודה אשר שולבו בעבודה בתחום הכשרתם",
+                        "מספר המתחברים לרשתות חברתיות לקידום תעסוקתי": "מספר המתחברים לרשתות חברתיות לקידום תעסוקתי",
+                        "מספר המדווחים על שליטה במיומנויות המקדמות שילוב בעולם התעסוקה החדש": "מספר המדווחים על שליטה במיומנויות המקדמות שילוב בעולם התעסוקה החדש",
+                        "מספר - שיעור (%) מסיימי הכשרות לתעסוקה": "מספר - שיעור (%) מסיימי הכשרות לתעסוקה"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec2808",
+                    "label": "ערך יעד למספר המסיימים הכשרות לעבודה אשר שולבו בעבודה בתחום הכשרתם",
+                    "name": "wp_goals_improvework_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec277b",
+                                "operator": "==",
+                                "value": "מספר המסיימים הכשרות לעבודה אשר שולבו בעבודה בתחום הכשרתם"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-improve",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec28a7",
+                    "label": "ערך יעד למספר המתחברים לרשתות חברתיות לקידום תעסוקתי",
+                    "name": "wp_goals_improvework_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec277b",
+                                "operator": "==",
+                                "value": "מספר המתחברים לרשתות חברתיות לקידום תעסוקתי"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-improve",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2931",
+                    "label": "ערך יעד למספר המדווחים על שליטה במיומנויות המקדמות שילוב בעולם התעסוקה החדש",
+                    "name": "wp_goals_improvework_m3",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec277b",
+                                "operator": "==",
+                                "value": "מספר המדווחים על שליטה במיומנויות המקדמות שילוב בעולם התעסוקה החדש"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-improve",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec29b8",
+                    "label": "ערך יעד למספר - שיעור (%) מסיימי הכשרות לתעסוקה",
+                    "name": "wp_goals_improvework_m4",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec277b",
+                                "operator": "==",
+                                "value": "מספר - שיעור (%) מסיימי הכשרות לתעסוקה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-improve",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2a41",
+                    "label": "סיוע למעסיק בהכשרה או גיוס כח אדם",
+                    "name": "wp_goals_helpemployee",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר מדדים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "סיוע למעסיק בהכשרה או גיוס כח אדם"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-helpemp",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מספר המעסיקים שנהנו מסיוע": "מספר המעסיקים שנהנו מסיוע",
+                        "מספר המועסקים שגויסו": "מספר המועסקים שגויסו"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec2acd",
+                    "label": "ערך יעד למספר המעסיקים שנהנו מסיוע",
+                    "name": "wp_goals_helpemployee_m1",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2a41",
+                                "operator": "==",
+                                "value": "מספר המעסיקים שנהנו מסיוע"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-helpemp",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2b9f",
+                    "label": "ערך יעד למספר המועסקים שגויסו",
+                    "name": "wp_goals_helpemployee_m2",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2a41",
+                                "operator": "==",
+                                "value": "מספר המועסקים שגויסו"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "j-helpemp",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "%",
+                    "min": 1,
+                    "max": 100,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec2c0f",
+                    "label": "אחר",
+                    "name": "wp_goals_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec130f",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "אחר, נא לפרט",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f6d869ec2c99",
+                    "label": "העשרת שפה",
+                    "name": "wp_skills_language",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "העשרת שפה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "עברית": "עברית",
+                        "אנגלית": "אנגלית",
+                        "ערבית": "ערבית",
+                        "רוסית": "רוסית",
+                        "אמהרית": "אמהרית"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec2d20",
+                    "label": "מיומנויות בנושא מחשב",
+                    "name": "wp_skills_computers",
+                    "type": "checkbox",
+                    "instructions": "ניתן לבחור מספר ערכים",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec0e99",
+                                "operator": "==",
+                                "value": "מחשבים ואינטרנט"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "אופיס": "אופיס",
+                        "הכרת מחשב": "הכרת מחשב",
+                        "לינקד-אין": "לינקד-אין",
+                        "תקשורת": "תקשורת",
+                        "תיכנות": "תיכנות",
+                        "אקסל": "אקסל"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec2dab",
+                    "label": "מיקום פיזי של פעילות התכנית",
+                    "name": "wp_geo_area_new",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "תכנית עירונית": "תכנית עירונית",
+                        "תכנית אזורית": "תכנית אזורית",
+                        "תכנית שכונתית": "תכנית שכונתית",
+                        "תכנית במרכז תעסוקה": "תכנית במרכז תעסוקה"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec2e3c",
+                    "label": "אזור בעיר",
+                    "name": "wp_geo_area_part",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2dab",
+                                "operator": "==",
+                                "value": "תכנית אזורית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "צפון": "צפון",
+                        "מזרח": "מזרח",
+                        "דרום": "דרום",
+                        "מערב": "מערב"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec2ec3",
+                    "label": "תכנית שכונתית",
+                    "name": "wp_geo_area_location",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2dab",
+                                "operator": "==",
+                                "value": "תכנית שכונתית"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "צפון": "צפון",
+                        "דרום": "דרום",
+                        "מזרח": "מזרח",
+                        "מערב": "מערב"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d9472fd41d",
+                    "label": "תכנית שכונתית צפון",
+                    "name": "wp_geo_area_location_north",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2ec3",
+                                "operator": "==",
+                                "value": "צפון"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "רמות אלון": "רמות אלון",
+                        "גאולה": "גאולה",
+                        "בוכרים": "בוכרים",
+                        "גבעת שאול": "גבעת שאול",
+                        "רמת שלמה": "רמת שלמה",
+                        "שכולות - רמת אשכול, שמואל הנביא, סנהנדריה": "שכולות - רמת אשכול, שמואל הנביא, סנהנדריה",
+                        "מעלות דפנה": "מעלות דפנה",
+                        "החומה השלישית": "החומה השלישית",
+                        "גבעה צרפתית": "גבעה צרפתית",
+                        "מורשה-מוסררה": "מורשה-מוסררה",
+                        "נווה יעקב": "נווה יעקב",
+                        "פסגת זאב": "פסגת זאב"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d95effd41e",
+                    "label": "תכנית שכונתית דרום",
+                    "name": "wp_geo_area_location_south",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2ec3",
+                                "operator": "==",
+                                "value": "דרום"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מושבה גרמנית - גינות העיר": "מושבה גרמנית - גינות העיר",
+                        "בקעה": "בקעה",
+                        "תלפיות": "תלפיות",
+                        "גוננים - קטמונים גונן א-ח": "גוננים - קטמונים גונן א-ח"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d9696fd41f",
+                    "label": "תכנית שכונתית מזרח",
+                    "name": "wp_geo_area_location_east",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2ec3",
+                                "operator": "==",
+                                "value": "מזרח"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "א-טור": "א-טור",
+                        "באב א-זהרה": "באב א-זהרה",
+                        "בית חנינה": "בית חנינה",
+                        "ג'בל מוכבר": "ג'בל מוכבר",
+                        "שייח ג'ראח": "שייח ג'ראח",
+                        "אום טובה": "אום טובה",
+                        "בית צפפה": "בית צפפה",
+                        "ואדי ג'וז": "ואדי ג'וז",
+                        "עיסאוויה": "עיסאוויה",
+                        "צור באהר": "צור באהר",
+                        "שועפט": "שועפט",
+                        "כפר עקב": "כפר עקב",
+                        "סמירה מיס": "סמירה מיס",
+                        "מחנה פליטים שועפט": "מחנה פליטים שועפט",
+                        "עיר עתיקה - רובע נוצרי, ארמני ומוסלמי": "עיר עתיקה - רובע נוצרי, ארמני ומוסלמי",
+                        "סלאח אדין (מוסררה)": "סלאח אדין (מוסררה)",
+                        "סילוואן": "סילוואן",
+                        "ראס אל עמוד": "ראס אל עמוד",
+                        "אבו טור": "אבו טור",
+                        "ואדי קדים": "ואדי קדים",
+                        "אום ליסון": "אום ליסון",
+                        "שרפט": "שרפט"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d9761fd420",
+                    "label": "תכנית שכונתית מערב",
+                    "name": "wp_geo_area_location_west",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2ec3",
+                                "operator": "==",
+                                "value": "מערב"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "גבעת משואה": "גבעת משואה",
+                        "גילה": "גילה",
+                        "הרובע היהודי": "הרובע היהודי",
+                        "נחלאות - מרכז לב העיר": "נחלאות - מרכז לב העיר",
+                        "קרייית מנחם": "קרייית מנחם",
+                        "לב העיר": "לב העיר",
+                        "בית הכרם": "בית הכרם",
+                        "הר חומה": "הר חומה",
+                        "תלפיות מזרח": "תלפיות מזרח",
+                        "ארמון הנציב": "ארמון הנציב",
+                        "בית וגן": "בית וגן",
+                        "הר נוף": "הר נוף",
+                        "רוממה": "רוממה",
+                        "קריית יובל": "קריית יובל"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec2f3f",
+                    "label": "המרכז(ים) בהם פועלת התכנית",
+                    "name": "wp_geo_area_center_location",
+                    "type": "checkbox",
+                    "instructions": "יש לבחור מרכז אחד או יותר, בהם פועלת התכנית",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec2dab",
+                                "operator": "==",
+                                "value": "תכנית במרכז תעסוקה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "מרכז צעירים": "מרכז צעירים",
+                        "מרכז ריאן": "מרכז ריאן",
+                        "מרכז לתעסוקת אקדמאים וסטודנטים": "מרכז לתעסוקת אקדמאים וסטודנטים",
+                        "קעליטה": "קעליטה",
+                        "מרכז הזדמנות": "מרכז הזדמנות",
+                        "מרכז כיוון": "מרכז כיוון",
+                        "מרכז קריירה": "מרכז קריירה",
+                        "הפלוס בשישים": "הפלוס בשישים",
+                        "רכזי תעסוקה בשכונות": "רכזי תעסוקה בשכונות",
+                        "מטה הרשות העירונית לתעסוקה": "מטה הרשות העירונית לתעסוקה"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec2fc8",
+                    "label": "התאמה להפעלה מקוונת",
+                    "name": "wp_online_new2",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "כן, באופן מלא": "כן, באופן מלא",
+                        "כן, באופן חלקי": "כן, באופן חלקי",
+                        "לא": "לא",
+                        "other": "other"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 1,
+                    "save_other_choice": 1,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec304e",
+                    "label": "קהל יעד של התכנית",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "message": "",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5f6d869ec30d4",
+                    "label": "מגזר",
+                    "name": "wp_social_section_new",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "פתוח לכל": "פתוח לכל",
+                        "כללי": "כללי",
+                        "ערבי": "ערבי",
+                        "חרדי": "חרדי"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec315f",
+                    "label": "מגדר",
+                    "name": "wp_gender_new",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "גברים ונשים": "גברים ונשים",
+                        "גברים בלבד": "גברים בלבד",
+                        "נשים בלבד": "נשים בלבד",
+                        "other": "other",
+                        "אחר": "אחר"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 1,
+                    "save_other_choice": 1,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec31e5",
+                    "label": "אזור מגורים",
+                    "name": "wp_living_area",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "ירושלים": "ירושלים",
+                        "סביבת ירושלים - עד 30 ק\"מ": "סביבת ירושלים - עד 30 ק\"מ",
+                        "מרוחק מירושלים - מעל 30 ק\"מ": "מרוחק מירושלים - מעל 30 ק\"מ"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5f6d869ec326a",
+                    "label": "גיל מינימלי",
+                    "name": "wp_min_age",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "מספר בין 14 ל 120",
+                    "prepend": "",
+                    "append": "",
+                    "min": 14,
+                    "max": 120,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec32f5",
+                    "label": "גיל מקסימלי",
+                    "name": "wp_max_age",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "מספר בין 14 ל 120",
+                    "prepend": "",
+                    "append": "",
+                    "min": 14,
+                    "max": 120,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec337e",
+                    "label": "האם נדרש נסיון תעסוקתי?",
+                    "name": "wp_work_experience2",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "כן": "כן",
+                        "לא": "לא"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5f6d869ec3409",
+                    "label": "התאמה לאנשים עובדים",
+                    "name": "wp_working_people2",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "כן": "כן",
+                        "לא": "לא"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5f6d869ec348f",
+                    "label": "התאמה לאוכלוסיות",
+                    "name": "wp_communities",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "עולים חדשים": "עולים חדשים",
+                        "יוצאי אתיופיה": "יוצאי אתיופיה",
+                        "סטודנטים": "סטודנטים",
+                        "חרדים": "חרדים",
+                        "בעלי מוגבלויות": "בעלי מוגבלויות",
+                        "מעסיקים": "מעסיקים",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec3552",
+                    "label": "שפת דיבור",
+                    "name": "wp_communities_lang",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec348f",
+                                "operator": "==",
+                                "value": "עולים חדשים"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "אנגלית": "אנגלית",
+                        "צרפתית": "צרפתית",
+                        "ספרדית": "ספרדית",
+                        "רוסית": "רוסית",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_5f6d869ec35db",
+                    "label": "אוכלוסיות אחר",
+                    "name": "wp_communities_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec348f",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f6d869ec3662",
+                    "label": "שפות אחר",
+                    "name": "wp_communities_lang_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec3552",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f6d869ec36e1",
+                    "label": "השכלה או הכשרה נדרשת",
+                    "name": "wp_prequisite2",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "ללא": "ללא",
+                        "12 שנ\"ל": "12 שנ\"ל",
+                        "תעודת בגרות": "תעודת בגרות",
+                        "הנדסאי": "הנדסאי",
+                        "אקדמאי": "אקדמאי",
+                        "other": "other"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 1,
+                    "save_other_choice": 1,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec3775",
+                    "label": "מתכונת ומרכיבי התכנית",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "message": "",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5f6d869ec3807",
+                    "label": "מועד תחילת התוכנית",
+                    "name": "wp_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "display_format": "d\/m\/Y",
+                    "return_format": "d\/m\/Y",
+                    "first_day": 0
+                },
+                {
+                    "key": "field_5f6d869ec389b",
+                    "label": "מספר מחזורים",
+                    "name": "wp_n_cycles",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": 200,
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec392c",
+                    "label": "מספר מפגשים בתכנית",
+                    "name": "wp_n_meetings",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec39bd",
+                    "label": "תדירות מפגשים בתכנית",
+                    "name": "wp_meet_freq",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "חד פעמי": "חד פעמי",
+                        "פעם בשבוע": "פעם בשבוע",
+                        "פעמיים בשבוע": "פעמיים בשבוע",
+                        "אחת לשבועיים": "אחת לשבועיים",
+                        "אחת לחודש": "אחת לחודש",
+                        "אחר": "אחר"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5f6d869ec3a54",
+                    "label": "תדירות מפגשים אחר",
+                    "name": "wp_meet_freq_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec39bd",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f6d869ec3ae9",
+                    "label": "מספר שעות אקדמיות במפגש",
+                    "name": "wp_meetings_length",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec3b7f",
+                    "label": "מספר שעות אקדמיות בתכנית כולה",
+                    "name": "wp_meetings_totalh",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec3c14",
+                    "label": "מספר משתתפים מינימלי",
+                    "name": "wp_min_participants",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec3ca1",
+                    "label": "מספר משתתפים מקסימלי",
+                    "name": "wp_max_participants",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec3d34",
+                    "label": "סוג מפגשים בתכנית",
+                    "name": "wp_type_participants2",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "פרטני": "פרטני",
+                        "קבוצתי": "קבוצתי",
+                        "כנס": "כנס",
+                        "יריד": "יריד",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec3dc8",
+                    "label": "שותפים מקצועיים",
+                    "name": "wp_partners",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "choices": {
+                        "שותפים מחוץ לעיריה": "שותפים מחוץ לעיריה",
+                        "אגף רווחה": "אגף רווחה",
+                        "אגף קליטה": "אגף קליטה",
+                        "אגף לקידום עסקים": "אגף לקידום עסקים",
+                        "רשות צעירים": "רשות צעירים",
+                        "אחר": "אחר"
+                    },
+                    "allow_custom": 1,
+                    "save_custom": 1,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5f6d869ec3e5a",
+                    "label": "שותפים מקצועיים אחר",
+                    "name": "wp_partners_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec3dc8",
+                                "operator": "==",
+                                "value": "אחר"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f6d869ec3eee",
+                    "label": "שם גורם מקצועי - שותף מחוץ לעירייה",
+                    "name": "wp_partners_muni_other",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f6d869ec3dc8",
+                                "operator": "==",
+                                "value": "שותפים מחוץ לעיריה"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5f6d869ec3f80",
+                    "label": "עלויות",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5f6d869ec4017",
+                    "label": "עלות כוללת של התוכנית",
+                    "name": "wp_total_cost",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "ש\"ח",
+                    "min": "",
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec40aa",
+                    "label": "מתוכו מימון היחידה-מרכז",
+                    "name": "wp_unit_cost",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "ש\"ח",
+                    "min": "",
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec4141",
+                    "label": "מתוכו מימון עירוני",
+                    "name": "wp_municipality_cost",
+                    "type": "number",
+                    "instructions": "תקציב לתכנית ממקורות מימון",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "ש\"ח",
+                    "min": "",
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec41d2",
+                    "label": "מתוכו מימון חיצוני",
+                    "name": "wp_external_cost",
+                    "type": "number",
+                    "instructions": "גופים מחוץ לעירייה",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "ש\"ח",
+                    "min": "",
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec425d",
+                    "label": "דמי השתתפות למשתתפים",
+                    "name": "wp_participants_cost",
+                    "type": "number",
+                    "instructions": "נא למלא 0 אם ניתן בחינם",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "ש\"ח",
+                    "min": 0,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_5f6d869ec42f2",
+                    "label": "משוב על תהליך מילוי הטופס",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "message": "",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5f6d869ec4382",
+                    "label": "משוב",
+                    "name": "wp_feedback",
+                    "type": "textarea",
+                    "instructions": "במסגרת מאמצינו לשיפור נשמח להצעות או דיווח על תקלות. החוויה שלך חשובה לנו. אין חובה למלא.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 6,
+                    "new_lines": "",
+                    "custom_content": 0,
+                    "custom_excerpt": 0,
+                    "custom_user_bio": 0,
+                    "readonly": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:development"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1605432049
+}

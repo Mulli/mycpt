@@ -1,0 +1,448 @@
+{
+    "key": "group_5fefa342e32aa",
+    "title": "דו\"ח ביצוע חלק 1",
+    "fields": [
+        {
+            "key": "field_5fefa342ebbcb",
+            "label": "ביצוע חלק ראשון",
+            "name": "report-part-1",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5fefa342efb03",
+                    "label": "קבוצה נתוני ניהול",
+                    "name": "fg_metadata",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fefa34320eae",
+                            "label": "קוד מזהה",
+                            "name": "wp_id",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "wp-hide-frontend",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "לשימוש משרדי",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fefa343248cf",
+                            "label": "גרסת טופס",
+                            "name": "wp_form_version",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "wp-hide-frontend",
+                                "id": ""
+                            },
+                            "default_value": "b12",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fefa34328340",
+                            "label": "סטטוס ספריה",
+                            "name": "wp_lib_status",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "wp-hide-frontend",
+                                "id": ""
+                            },
+                            "choices": {
+                                "הגשה": "הגשה",
+                                "מאושרת": "מאושרת",
+                                "מקוטלגת": "מקוטלגת",
+                                "לא רלוונטית": "לא רלוונטית",
+                                "אחר": "אחר"
+                            },
+                            "default_value": "הגשה",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5fefa3432bc7f",
+                            "label": "תאריך יצירת המענה",
+                            "name": "wp_create_date",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "wp-hide-frontend",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5fefa342f36de",
+                    "label": "קבוצה שם המענה ואחריות",
+                    "name": "fg_intro",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fefa3433eaa3",
+                            "label": "שם המענה ואחריות",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5fefa343426c3",
+                            "label": "שם המענה",
+                            "name": "wp_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5fefa343464e6",
+                            "label": "שם המרכז\/היחידה במסגרתו פועל המענה",
+                            "name": "wp_centers",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "מרכז צעירים": "מרכז צעירים",
+                                "מרכז ריאן": "מרכז ריאן",
+                                "מרכז לתעסוקת אקדמאים וסטודנטים": "מרכז לתעסוקת אקדמאים וסטודנטים",
+                                "קעליטה": "קעליטה",
+                                "מרכז הזדמנות": "מרכז הזדמנות",
+                                "מרכז כיוון": "מרכז כיוון",
+                                "מרכז הקריירה באוניברסיטה העברית": "מרכז הקריירה באוניברסיטה העברית",
+                                "הפלוס בשישים": "הפלוס בשישים",
+                                "רכזי תעסוקה בשכונות": "רכזי תעסוקה בשכונות",
+                                "מטה הרשות העירונית לתעסוקה": "מטה הרשות העירונית לתעסוקה",
+                                "אפיקי הצלחה": "אפיקי הצלחה",
+                                "אחר": "אחר"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5fefa34349ffc",
+                            "label": "מרכז - אחר",
+                            "name": "wp_centers_other",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5fefa343464e6",
+                                        "operator": "==",
+                                        "value": "אחר"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "custom_site_title": 0,
+                            "custom_site_tagline": 0,
+                            "custom_title": 0,
+                            "custom_slug": 0,
+                            "custom_username": 0,
+                            "custom_sku": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5fefa3434daab",
+                            "label": "שם אחראי",
+                            "name": "wp_author",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "custom_site_title": 0,
+                            "custom_site_tagline": 0,
+                            "custom_title": 0,
+                            "custom_slug": 0,
+                            "custom_username": 0,
+                            "custom_sku": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5fefa34351537",
+                            "label": "תפקיד",
+                            "name": "wp_author_role",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "מנהל\/ת במרכז": "מנהל\/ת במרכז",
+                                "מנהל\/ת במטה הרשות העירונית לתעסוקה": "מנהל\/ת במטה הרשות העירונית לתעסוקה",
+                                "רכז\/ת תעסוקה בשכונות": "רכז\/ת תעסוקה בשכונות",
+                                "עובד\/ת הרשות העירונית לתעסוקה": "עובד\/ת הרשות העירונית לתעסוקה"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5fefa34355230",
+                            "label": "טלפון",
+                            "name": "wp_responsible_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "custom_site_title": 0,
+                            "custom_site_tagline": 0,
+                            "custom_title": 0,
+                            "custom_slug": 0,
+                            "custom_username": 0,
+                            "custom_sku": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5fefa34358eca",
+                            "label": "דוא\"ל",
+                            "name": "wp_responsible_email",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "custom_site_title": 0,
+                            "custom_site_tagline": 0,
+                            "custom_title": 0,
+                            "custom_slug": 0,
+                            "custom_username": 0,
+                            "custom_sku": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5fefa3435ca50",
+                            "label": "המפעיל",
+                            "name": "wp_operator",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "custom_site_title": 0,
+                            "custom_site_tagline": 0,
+                            "custom_title": 0,
+                            "custom_slug": 0,
+                            "custom_username": 0,
+                            "custom_sku": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5fefa34360619",
+                            "label": "תאריך עדכון הדיווח",
+                            "name": "wp_modified_date",
+                            "type": "date_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "d\/m\/Y",
+                            "return_format": "d\/m\/Y",
+                            "first_day": 0
+                        },
+                        {
+                            "key": "field_5fefa34364058",
+                            "label": "שנת הזנה",
+                            "name": "wp_n_report_year",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "2020": "2020",
+                                "2021": "2021",
+                                "2022": "2022"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": 2021,
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_workplansruns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610034309
+}

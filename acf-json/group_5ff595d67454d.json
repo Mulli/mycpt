@@ -1,0 +1,479 @@
+{
+    "key": "group_5ff595d67454d",
+    "title": "דו\"ח ביצוע חלק 7 - שותפים ועלויות",
+    "fields": [
+        {
+            "key": "field_5ff595d67cc05",
+            "label": "דו\"ח ביצוע חלק 7 - שותפים ועלויות",
+            "name": "report-part-7",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ff595d69a65a",
+                    "label": "קבוצה שותפים מקצועיים",
+                    "name": "fg_partners",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff595ed08841",
+                            "label": "שותפים מקצועיים",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ff595ed0c242",
+                            "label": "שותפים מקצועיים",
+                            "name": "wp_partners",
+                            "type": "checkbox",
+                            "instructions": "הבחירה באפשרות \"ללא שותפים\", תמנע אפשרות לבחור שותפים מתוך או מחוץ לעירייה.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "ללא שותפים (רשות התעסוקה העירונית בלבד)": "ללא שותפים (רשות התעסוקה העירונית בלבד)",
+                                "שותפים מתוך העירייה": "שותפים מתוך העירייה",
+                                "שותפים מחוץ לעירייה": "שותפים מחוץ לעירייה"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff595ed0fc72",
+                            "label": "שותפים מקצועיים מתוך העירייה",
+                            "name": "wp_partners_inside",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff595ed0c242",
+                                        "operator": "==",
+                                        "value": "שותפים מתוך העירייה"
+                                    },
+                                    {
+                                        "field": "field_5ff595ed0c242",
+                                        "operator": "!=",
+                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "100",
+                                "class": "j-green",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "אגף רווחה": "אגף רווחה",
+                                "אגף קליטה": "אגף קליטה",
+                                "אגף לקידום עסקים": "אגף לקידום עסקים",
+                                "רשות צעירים": "רשות צעירים",
+                                "אחר": "אחר"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff595ed138a8",
+                            "label": "שותפים מקצועיים מתוך העירייה - אחר",
+                            "name": "wp_partners_inside_other",
+                            "type": "repeater",
+                            "instructions": "ניתן להוסיף מספר שותפים מקצועיים בלחיצה על כפתור \"הוספת שורה חדשה\". כל שותף נוסף בשורה נפרדת.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff595ed0fc72",
+                                        "operator": "==",
+                                        "value": "אחר"
+                                    },
+                                    {
+                                        "field": "field_5ff595ed0c242",
+                                        "operator": "!=",
+                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "100",
+                                "class": "j-green",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 10,
+                            "layout": "table",
+                            "button_label": "הוספת שותף נוסף",
+                            "sub_fields": []
+                        },
+                        {
+                            "key": "field_5ff595ed17429",
+                            "label": "שותפים מקצועיים מחוץ לעירייה",
+                            "name": "wp_partners_outside",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff595ed0c242",
+                                        "operator": "==",
+                                        "value": "שותפים מחוץ לעירייה"
+                                    },
+                                    {
+                                        "field": "field_5ff595ed0c242",
+                                        "operator": "!=",
+                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "100",
+                                "class": "j-blue",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "משרד הרווחה והשירותים החברתיים": "משרד הרווחה והשירותים החברתיים",
+                                "המשרד לשוויון חברתי": "המשרד לשוויון חברתי",
+                                "המשרד לפיתוח הפריפריה, הנגב והגליל": "המשרד לפיתוח הפריפריה, הנגב והגליל",
+                                "משרד ירושלים ומורשת": "משרד ירושלים ומורשת",
+                                "אחר": "אחר"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5ff595ed1aef1",
+                            "label": "שותפים מקצועיים מחוץ לעירייה - אחר",
+                            "name": "wp_partners_outside_other",
+                            "type": "repeater",
+                            "instructions": "ניתן להוסיף מספר שותפים מקצועיים בלחיצה על כפתור \"הוספת שורה חדשה\". כל שותף נוסף בשורה נפרדת.",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5ff595ed17429",
+                                        "operator": "==",
+                                        "value": "אחר"
+                                    },
+                                    {
+                                        "field": "field_5ff595ed0c242",
+                                        "operator": "!=",
+                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "100",
+                                "class": "j-blue",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 10,
+                            "layout": "table",
+                            "button_label": "הוספת שותף נוסף",
+                            "sub_fields": []
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5ff595d69dfb2",
+                    "label": "קבוצת עלויות",
+                    "name": "fg_costs",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff595edc4c73",
+                            "label": "עלויות המחזור הנוכחי",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ff595edc85d2",
+                            "label": "עלות כוללת של המענה",
+                            "name": "wp_total_cost",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "ש\"ח",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ff595edcc040",
+                            "label": "מתוכה מימון היחידה-מרכז",
+                            "name": "wp_unit_cost",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "ש\"ח",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ff595edcfad8",
+                            "label": "מתוכה מימון עירוני",
+                            "name": "wp_municipality_cost",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "ש\"ח",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ff595edd3476",
+                            "label": "מתוכה מימון חיצוני",
+                            "name": "wp_external_cost",
+                            "type": "number",
+                            "instructions": "גופים מחוץ לעירייה",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "ש\"ח",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_5ff595edd6f02",
+                            "label": "דמי השתתפות למשתתף",
+                            "name": "wp_participants_cost",
+                            "type": "number",
+                            "instructions": "נא למלא 0 אם ניתן בחינם",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "ש\"ח",
+                            "min": 0,
+                            "max": "",
+                            "step": 1
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5ff595d6a1ba6",
+                    "label": "קבוצת הערות",
+                    "name": "fg_comments",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff595edf2088",
+                            "label": "הערות ומשוב",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_5ff595ee01b01",
+                            "label": "הערות",
+                            "name": "wp_comments",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 6,
+                            "new_lines": "",
+                            "custom_content": 0,
+                            "custom_excerpt": 0,
+                            "custom_user_bio": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5ff595ee055e0",
+                            "label": "משוב",
+                            "name": "wp_feedback",
+                            "type": "textarea",
+                            "instructions": "במסגרת מאמצינו לשיפור נשמח להצעות או דיווח על תקלות. החוויה שלך חשובה לנו. אין חובה למלא.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 6,
+                            "new_lines": "",
+                            "custom_content": 0,
+                            "custom_excerpt": 0,
+                            "custom_user_bio": 0,
+                            "readonly": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_workplansruns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610192658
+}

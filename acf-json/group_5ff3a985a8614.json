@@ -1,0 +1,182 @@
+{
+    "key": "group_5ff3a985a8614",
+    "title": "דו\"ח ביצוע חלק 5 - הרכב משתתפים",
+    "fields": [
+        {
+            "key": "field_5ff3a985ad8d4",
+            "label": "דוח ביצוע חלק 5 - הרכב משתתפים",
+            "name": "fg_participants_types",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5ff7c250dad71",
+                    "label": "פירוט הרכב המשתתפים",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "פירוט הרכב המשתתפים",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_5ff3a985b5198",
+                    "label": "פירוט הרכב משתתפים",
+                    "name": "fg_participants_types_table",
+                    "type": "repeater",
+                    "instructions": "בשורה ראשונה נא לציין את <strong>כלל<\/strong> המשתתפים, מבטלים וכו'. בהמשך סכומים לפי פילוח מתאים.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ff3c5f44a5d1",
+                            "label": "מאפיין",
+                            "name": "type",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5ff3c4debd753",
+                            "label": "מתחילים",
+                            "name": "table_start",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5ff3c514bd754",
+                            "label": "מסיימים",
+                            "name": "table_finish",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5ff3c52abd755",
+                            "label": "ביטולים",
+                            "name": "table_cancel",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": "",
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5ff3c543bd756",
+                            "label": "נושרים",
+                            "name": "table_drop",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 0,
+                            "max": "",
+                            "step": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_workplansruns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1610192256
+}

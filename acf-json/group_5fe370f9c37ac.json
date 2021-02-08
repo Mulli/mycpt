@@ -1,0 +1,133 @@
+{
+    "key": "group_5fe370f9c37ac",
+    "title": "הרשאות משתמשים",
+    "fields": [
+        {
+            "key": "field_5fe371852ba10",
+            "label": "תפקיד",
+            "name": "org_role",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "choices": {
+                "מנהל במטה": "מנהל במטה",
+                "עובד מטה": "עובד מטה",
+                "מנהל יחידה": "מנהל יחידה",
+                "עובד יחידה": "עובד יחידה",
+                "אורח": "אורח"
+            },
+            "default_value": "אורח",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5fe3725bbccea",
+            "label": "שם יחידה",
+            "name": "org_unit",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "choices": {
+                "1: אדמין": "1: אדמין",
+                "2: אפיקי הצלחה": "2: אפיקי הצלחה",
+                "3: הפלוס בשישים": "3: הפלוס בשישים",
+                "4: מטה הרשות העירונית לתעסוקה": "4: מטה הרשות העירונית לתעסוקה",
+                "5: מרכז הזדמנות": "5: מרכז הזדמנות",
+                "6: מרכז כיוון": "6: מרכז כיוון",
+                "7: מרכז לתעסוקת אקדמאים וסטודנטים": "7: מרכז לתעסוקת אקדמאים וסטודנטים",
+                "8: מרכז צעירים": "8: מרכז צעירים",
+                "9: מרכז ריאן": "9: מרכז ריאן",
+                "10: קעליטה": "10: קעליטה",
+                "11: מרכז הקריירה באוניברסיטה העברית": "11: מרכז הקריירה באוניברסיטה העברית",
+                "12: רכזי תעסוקה בשכונות": "12: רכזי תעסוקה בשכונות",
+                "13: רכזים": "13: רכזים",
+                "99: אורחים": "99: אורחים"
+            },
+            "default_value": "99: אורחים",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5fe3cbeb35a85",
+            "label": "הרשאה",
+            "name": "org_permit",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "choices": {
+                "1: הכל - צפיה": "1: הכל - צפיה",
+                "2: הכל - עדכון": "2: הכל - עדכון",
+                "3: יחידה - צפיה": "3: יחידה - צפיה",
+                "4: יחידה - עדכון": "4: יחידה - עדכון",
+                "5: אישי": "5: אישי"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "current_user_role",
+                "operator": "==",
+                "value": "contributor"
+            }
+        ],
+        [
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "contributor"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1608774973
+}

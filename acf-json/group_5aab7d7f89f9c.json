@@ -1,0 +1,196 @@
+{
+    "key": "group_5aab7d7f89f9c",
+    "title": "תוכנית עבודה",
+    "fields": [
+        {
+            "key": "field_5aacf251a4647",
+            "label": "רשימת משימות",
+            "name": "personal_tasks",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5aab776d20b68",
+                    "label": "המשימה",
+                    "name": "task",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "17",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "שם קצר למשימה",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 40
+                },
+                {
+                    "key": "field_5aab77ad20b69",
+                    "label": "תאור המשימה",
+                    "name": "description",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "37",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aab77cf20b6a",
+                    "label": "סטטוס",
+                    "name": "status",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "14",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "טרם החל": "טרם החל",
+                        "בביצוע": "בביצוע",
+                        "הסתיים": "הסתיים",
+                        "נדחה": "נדחה",
+                        "בוטל": "בוטל",
+                        "מתעכב": "מתעכב"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5aab783b20b6b",
+                    "label": "ת. התחלה",
+                    "name": "start_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/y",
+                    "save_format": "dd.mm.yy",
+                    "first_day": 0,
+                    "return_format": "d\/m\/Y"
+                },
+                {
+                    "key": "field_5aab78ab88b2c",
+                    "label": "ת. סיום",
+                    "name": "end_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/y",
+                    "save_format": "dd\/mm\/yy",
+                    "first_day": 0,
+                    "return_format": "d\/m\/Y"
+                },
+                {
+                    "key": "field_5aab78ff88b2d",
+                    "label": "הערות",
+                    "name": "coments",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5bf793bcd645e",
+                    "label": "צרכים\/מענים",
+                    "name": "needsolution",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "format",
+        "featured_image",
+        "categories",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1542953587
+}
