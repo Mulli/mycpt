@@ -1692,8 +1692,9 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 		$post_id = mbo_new_postat($d);
 		//$this->start_end_stats($post_id);
 		$fields = get_fields($post_id);
+		set_transient( 'mbo_new_postat_daily', $fields, 60*60*24 );
 
-		error_log('get fileds='. print_r($fields, true));
+		//error_log('get fileds='. print_r($fields, true));
 		return $fields;
 	}
 	// Endpoint: "yahavStats"
