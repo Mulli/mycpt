@@ -1,10 +1,10 @@
 {
     "key": "group_5fdbb577d6bd3",
-    "title": "מאגר תוכניות עבודה - ב3.3",
+    "title": "מאגר תוכניות עבודה - ב3.5",
     "fields": [
         {
             "key": "field_5fdbb577da8c5",
-            "label": "מאגר תוכניות - ב3.3",
+            "label": "מאגר תוכניות - ב3.5",
             "name": "workplans_plan_3",
             "type": "group",
             "instructions": "",
@@ -1033,8 +1033,8 @@
                             "choices": {
                                 "טיוטה": "טיוטה",
                                 "ממתין לאישור": "ממתין לאישור",
-                                "מאושר וממתין להפעלה": "מאושר וממתין להפעלה",
-                                "מאושר ופועל": "מאושר ופועל",
+                                "מאושר בשלב גיוס משתתפים": "מאושר בשלב גיוס משתתפים",
+                                "פועל": "פועל",
                                 "הסתיים": "הסתיים"
                             },
                             "default_value": false,
@@ -1044,6 +1044,31 @@
                             "return_format": "value",
                             "ajax": 0,
                             "placeholder": ""
+                        },
+                        {
+                            "key": "field_60243832466f0",
+                            "label": "האם המענה עירוני?",
+                            "name": "wp_operation_muni",
+                            "type": "radio",
+                            "instructions": "למענה עירוני ניתן להפנות תושבים מכל רחבי העיר",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "כן": "כן",
+                                "לא": "לא"
+                            },
+                            "allow_null": 1,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_600ba397ad4f9",
@@ -1658,9 +1683,9 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_5fdbb577dc3fd",
-                            "label": "עולים חדשים",
-                            "name": "wp_communities_lang",
+                            "key": "field_5fdbb57821eba",
+                            "label": "התאמה לאוכלוסיות ייחודיות",
+                            "name": "wp_communities",
                             "type": "checkbox",
                             "instructions": "",
                             "required": 0,
@@ -1674,13 +1699,55 @@
                                 ]
                             ],
                             "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "only_front": 0,
+                            "choices": {
+                                "סטודנטים": "סטודנטים",
+                                "בעלי מוגבלויות": "בעלי מוגבלויות",
+                                "אוכלוסיות בסיכון": "אוכלוסיות בסיכון",
+                                "מעסיקים": "מעסיקים",
+                                "יוצאי אתיופיה": "יוצאי אתיופיה",
+                                "עולים חדשים": "עולים חדשים",
+                                "אחר": "אחר"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "vertical",
+                            "toggle": 0,
+                            "return_format": "value",
+                            "save_custom": 0
+                        },
+                        {
+                            "key": "field_5fdbb577dc3fd",
+                            "label": "עולים חדשים",
+                            "name": "wp_communities_lang",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_600c0610adbcd",
+                                        "operator": "==",
+                                        "value": "מותאם לאוכלוסיות הבאות"
+                                    },
+                                    {
+                                        "field": "field_5fdbb57821eba",
+                                        "operator": "==",
+                                        "value": "עולים חדשים"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
                                 "width": "",
                                 "class": "",
                                 "id": ""
                             },
                             "only_front": 0,
                             "choices": {
-                                "דוברי אמהרית": "דוברי אמהרית",
                                 "דוברי אנגלית": "דוברי אנגלית",
                                 "דוברי ספרדית": "דוברי ספרדית",
                                 "דוברי פורטוגזית": "דוברי פורטוגזית",
@@ -1756,42 +1823,6 @@
                                 "עד גיל 40": "עד גיל 40",
                                 "בני 41+": "בני 41+",
                                 "בני 60+": "בני 60+"
-                            },
-                            "allow_custom": 0,
-                            "default_value": [],
-                            "layout": "vertical",
-                            "toggle": 0,
-                            "return_format": "value",
-                            "save_custom": 0
-                        },
-                        {
-                            "key": "field_5fdbb57821eba",
-                            "label": "התאמה לאוכלוסיות ייחודיות",
-                            "name": "wp_communities",
-                            "type": "checkbox",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_600c0610adbcd",
-                                        "operator": "==",
-                                        "value": "מותאם לאוכלוסיות הבאות"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "50",
-                                "class": "",
-                                "id": ""
-                            },
-                            "only_front": 0,
-                            "choices": {
-                                "סטודנטים": "סטודנטים",
-                                "בעלי מוגבלויות": "בעלי מוגבלויות",
-                                "אוכלוסיות בסיכון": "אוכלוסיות בסיכון",
-                                "מעסיקים": "מעסיקים",
-                                "אחר": "אחר"
                             },
                             "allow_custom": 0,
                             "default_value": [],
@@ -6763,5 +6794,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1612806009
+    "modified": 1612988612
 }

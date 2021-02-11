@@ -33,18 +33,22 @@ function delet_stats_daily(){
 function gen_all_hists($wplans){
 	$histres = array(); // all genertaed histograms
 	$histconf = array( // group, field, title
-					array("fg_wp_components", "wp_solution_type", "סוגי המענים"),
-					array("fg_desc", "wp_status_new", "סטטוס המענים"),
-					array("fg_desc", "wp_operation_status", "סטטוס הפעלה"),
-					array("fg_desc", "wp_deliver", "מתכונת העברה"),
-					array("fg_desc", "wp_geo_area_new", "מיקום פיזי"),
-					array("fg_desc", "wp_online_new2", "מענה מקוון"),
-					array("fg_intro", "wp_n_report_year", "שנת הדיווח"),
-					array("fg_target_audience", "wp_targetaud", "למי מיועד המענה"),
-					array("fg_intro", "wp_operator", "המפעיל"),
-					array("fg_target_audience", "wp_gender_new", "מגדר"),
-					array("fg_target_audience", "wp_social_section_new", "מגזר"),
-				);
+		array("fg_intro", "wp_centers", "מרכז/יחידה"),
+		array("fg_old_plan_type", "wp_solution_area", "תחום המענה"),
+		array("fg_old_plan_type", "wp_channel_1", "תחומי שילוב"),
+		array("fg_wp_components", "wp_solution_type", "סוגי המענים"),
+		array("fg_desc", "wp_status_new", "סטטוס המענים"),
+		array("fg_desc", "wp_operation_status", "סטטוס הפעלה"),
+		array("fg_desc", "wp_deliver", "מתכונת העברה"),
+		array("fg_desc", "wp_geo_area_new", "מיקום פיזי"),
+		array("fg_desc", "wp_online_new2", "מענה מקוון"),
+		array("fg_intro", "wp_n_report_year", "שנת הדיווח"),
+		array("fg_target_audience", "wp_targetaud", "למי מיועד המענה"),
+		array("fg_intro", "wp_operator", "המפעיל"),
+		array("fg_target_audience", "wp_gender_new", "מגדר"),
+		array("fg_target_audience", "wp_social_section_new", "מגזר"),
+		array("fg_target_audience", "wp_targetaud_age", "גיל"),
+	);
 	// generate all histograms
 	foreach ($histconf as $histConfig) {  	
     	$histres[$histConfig[2]] = get_hist($wplans, $histConfig);
@@ -134,6 +138,9 @@ function mbo_new_postat($title){ // add title / file name as parameter
 	$histres = gen_all_hists($wplans); // all genertaed histograms
 // error_log("============================". print_r($histres, true));
 	
+	update_dtable('field_602460a2e5906', $histres['מרכז/יחידה'], $stat_cpt);
+	update_dtable('field_602460dde590a', $histres['תחום המענה'], $stat_cpt);
+	update_dtable('field_6024d93ed37f0', $histres['תחומי שילוב'], $stat_cpt);
 	update_dtable('field_6020759fbbfbd', $histres['סוגי המענים'], $stat_cpt);
 	update_dtable('field_602075babbfc1', $histres['סטטוס המענים'], $stat_cpt);
 	update_dtable('field_602075cebbfc5', $histres['סטטוס הפעלה'], $stat_cpt);
@@ -145,6 +152,7 @@ function mbo_new_postat($title){ // add title / file name as parameter
 	update_dtable('field_60207671bbfdd', $histres['המפעיל'], $stat_cpt);
 	update_dtable('field_60207684bbfe1', $histres['מגדר'], $stat_cpt);
 	update_dtable('field_60207692bbfe5', $histres['מגזר'], $stat_cpt);
+	update_dtable('field_6024611fe590e', $histres['גיל'], $stat_cpt);
 
 	$time_key = 'field_5c750fc7fa99e'; // update_time = 'field_5c750fc7fa99e'; // text as date
 	update_field($time_key, $title, $stat_cpt);
@@ -163,6 +171,14 @@ function update_dtable($tablekey, $table, $post_id){
 		);
 		//add_row('wp_solution_type', $row, $stat_cpt); 
 		add_row($tablekey, $row, $post_id); 
+	}
+}
+
+if ( ! function_exists('mbo_get_cat_by_slug')) {
+
+	function mbo_get_cat_by_slug($slug){
+		$idObj = get_category_by_slug($slug); 
+		return $idObj ? $idObj->term_id : 1; // 1 is general
 	}
 }
 /*
@@ -230,13 +246,7 @@ array("fg_wp_components", "wp_solution_type", "סוגי המענים"),
 	*/
 	
 
-if ( ! function_exists('mbo_get_cat_by_slug')) {
 
-	function mbo_get_cat_by_slug($slug){
-		$idObj = get_category_by_slug($slug); 
-		return $idObj ? $idObj->term_id : 1; // 1 is general
-	}
-}
 /*
 $str = 'סה"כ תוכניות במערכת = '. $total ."<br />";
     $final = "";

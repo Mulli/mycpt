@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Digma MBO - Family Management
- * Description: Digma MBO (mycpt) custom post types with custom taxonomies and custom meta fields, exposing to the REST API. Runs with ACF PRO 5.7.12
+ * Description: Digma MBO (mycpt) custom post types with custom taxonomies and custom meta fields, exposing to the REST API. Runs with ACF PRO 5.9.4
  * Plugin URI:  http://site2goal.co.il
- * Version:     0.8
+ * Version:     0.9
  * Author:      Mulli
  * Author URI:  http://site2goal.co.il
  * License:     GPLv2
