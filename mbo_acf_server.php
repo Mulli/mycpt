@@ -1205,7 +1205,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 					"f" => $x["fg_intro"]["wp_name"],
 					"all" => $x["fg_target_audience"]["wp_targetaud"], // if open to all
 					"w" => $x["fg_target_audience"]["wp_gender_new"],
-					"m" => $x["fg_target_audience"]["wp_social_section_new"][0],
+					"m" => isset($x["fg_target_audience"]["wp_social_section_new"]) ? $x["fg_target_audience"]["wp_social_section_new"][0] : "",
 					"os" => $x["fg_desc"]["wp_operation_status"],
 					"s" => $x["fg_desc"]["wp_status_new"],
 					"g" => $x["fg_wp_components"]['wp_solution_type'],//$x["wp_channel"],
