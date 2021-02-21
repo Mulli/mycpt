@@ -1154,10 +1154,10 @@ class ACF_Rest_Server extends WP_Rest_Controller {
         return false;
 	}
     public function mbo_getWPnames( WP_REST_Request $request ) {
-	/*	if (false !== ($res = get_transient( 'wp3_2_names' ))) {
+		if (false !== ($res = get_transient( 'wp3_2_names' ))) {
 			//error_log("mbo_getWPnames: using cache");
 			return $res; // use cache
-	  	}*/
+	  	}
 		$body = $request->get_body();
 		////error_log( "mbo_getWPnames: body=" . print_r($body, true) );
 	
