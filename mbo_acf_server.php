@@ -1154,10 +1154,10 @@ class ACF_Rest_Server extends WP_Rest_Controller {
         return false;
 	}
     public function mbo_getWPnames( WP_REST_Request $request ) {
-		if (false !== ($res = get_transient( 'wp3_2_names' ))) {
+	/*	if (false !== ($res = get_transient( 'wp3_2_names' ))) {
 			//error_log("mbo_getWPnames: using cache");
 			return $res; // use cache
-	  	}
+	  	}*/
 		$body = $request->get_body();
 		////error_log( "mbo_getWPnames: body=" . print_r($body, true) );
 	
@@ -1203,6 +1203,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 				$item = array(
 					"id" => $cpt->ID,
 					"f" => $x["fg_intro"]["wp_name"],
+					"all" => $x["fg_target_audience"]["wp_targetaud"], // if open to all
 					"w" => $x["fg_target_audience"]["wp_gender_new"],
 					"m" => $x["fg_target_audience"]["wp_social_section_new"][0],
 					"os" => $x["fg_desc"]["wp_operation_status"],
@@ -1210,6 +1211,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 					"g" => $x["fg_wp_components"]['wp_solution_type'],//$x["wp_channel"],
 					"c" => $x["fg_intro"]["wp_centers"] ? $x["fg_intro"]["wp_centers"] : "",
 					"geo" => $x["fg_desc"]["wp_geo_area_new"],
+					"muni" => $x["fg_desc"]["wp_operation_muni"],
 					"t" => $x["fg_metadata"]["wp_lib_status"]
 				);
 			}
@@ -1218,7 +1220,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 			//$res[] = $item; // $x['wp_name'];
 		}
 		
-		set_transient( 'wp3_2_names', $res, 60*60*12 ); // 12 hours 
+		set_transient( 'wp3_2_names', $res, 60*15 ); // 15 min was 60*12 - 12 hours
 		// return json array of items
 		
 		return $res; // json_encode($res); // "Got mbo_getRnames OK, referrals=". count($referralsCpt) ;

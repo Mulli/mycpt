@@ -1398,6 +1398,99 @@
             ]
         },
         {
+            "key": "field_6024ec9977415",
+            "label": "אוכלוסיות ייחודיות",
+            "name": "wp_communities",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6024ec9977416",
+                    "label": "ID",
+                    "name": "id",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_6024ec9977417",
+                    "label": "כותרת",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "custom_site_title": 0,
+                    "custom_site_tagline": 0,
+                    "custom_title": 0,
+                    "custom_slug": 0,
+                    "custom_username": 0,
+                    "custom_sku": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_6024ec9977418",
+                    "label": "כמות",
+                    "name": "total",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "only_front": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                }
+            ]
+        },
+        {
             "key": "field_5c7473d426740",
             "label": "הפניות",
             "name": "referrals",
@@ -1885,5 +1978,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613028420
+    "modified": 1613032654
 }
