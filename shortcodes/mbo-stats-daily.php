@@ -45,7 +45,7 @@ function gen_all_hists($wplans){
 		array("fg_intro", "wp_n_report_year", "שנת הדיווח"),
 		array("fg_target_audience", "wp_targetaud", "למי מיועד המענה"),
 		array("fg_intro", "wp_operator", "המפעיל"),
-		array("fg_target_audience", "wp_targetaud", "קהל יעד"),
+		// array("fg_target_audience", "wp_targetaud", "קהל יעד"),
 		array("fg_target_audience", "wp_gender_new", "מגדר"),
 		array("fg_target_audience", "wp_social_section_new", "מגזר"),
 		array("fg_target_audience", "wp_targetaud_age", "גיל"),
@@ -152,7 +152,7 @@ function mbo_new_postat($title){ // add title / file name as parameter
 	update_dtable('field_6020763ebbfd5', $histres['שנת הדיווח'], $stat_cpt);
 	update_dtable('field_60207659bbfd9', $histres['למי מיועד המענה'], $stat_cpt);
 	update_dtable('field_60207671bbfdd', $histres['המפעיל'], $stat_cpt);
-	update_dtable('field_600c0610adbcd', $histres['קהל יעד'], $stat_cpt);
+	//update_dtable('field_600c0610adbcd', $histres['קהל יעד'], $stat_cpt);
 	update_dtable('field_60207684bbfe1', $histres['מגדר'], $stat_cpt);
 	update_dtable('field_60207692bbfe5', $histres['מגזר'], $stat_cpt);
 	update_dtable('field_6024611fe590e', $histres['גיל'], $stat_cpt);

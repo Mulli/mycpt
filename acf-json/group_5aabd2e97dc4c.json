@@ -1,0 +1,239 @@
+{
+    "key": "group_5aabd2e97dc4c",
+    "title": "פרטים אישיים ילדים",
+    "fields": [
+        {
+            "key": "field_5bff74e6620a4",
+            "label": "מידע ילדים",
+            "name": "kids_info",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5aabd2e98e3b6",
+                    "label": "שייכות למשפחה",
+                    "name": "kids_family",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "digma_families"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "post_type"
+                    ],
+                    "elements": "",
+                    "min": 1,
+                    "max": 1,
+                    "return_format": "id"
+                },
+                {
+                    "key": "field_5aabd2e98e79a",
+                    "label": "קישור להורים",
+                    "name": "kids_parents",
+                    "type": "relationship",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "digma_parents"
+                    ],
+                    "taxonomy": "",
+                    "filters": [
+                        "post_type"
+                    ],
+                    "elements": "",
+                    "min": 1,
+                    "max": 20,
+                    "return_format": "id"
+                },
+                {
+                    "key": "field_5aabd2e98ebb2",
+                    "label": "שם משפחה",
+                    "name": "kids_family_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "18",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aabd2e98ef75",
+                    "label": "שם פרטי",
+                    "name": "kids_first_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aabd2e98f38a",
+                    "label": "ת. זהות",
+                    "name": "kids_idnum",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "18",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aabd2e98f76a",
+                    "label": "טלפון",
+                    "name": "kids_phone1",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5aabd2e98ff20",
+                    "label": "ת. לידה",
+                    "name": "kids_birth_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "13",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y",
+                    "return_format": "d\/m\/Y",
+                    "first_day": 0
+                },
+                {
+                    "key": "field_5aabd2e990313",
+                    "label": "לינק שייך למשפחה",
+                    "name": "kids_family_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5aabd2e990717",
+                    "label": "אובייקט פוסט",
+                    "name": "kids_post_onject",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "digma_families"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                },
+                {
+                    "key": "field_5aabd2e990afa",
+                    "label": "אימייל",
+                    "name": "אימייל",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "digma_kids"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1614558787
+}

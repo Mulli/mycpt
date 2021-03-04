@@ -1,10 +1,10 @@
 {
     "key": "group_5fdbb577d6bd3",
-    "title": "מאגר תוכניות עבודה - ב3.6",
+    "title": "מאגר תוכניות עבודה - ב3.7",
     "fields": [
         {
             "key": "field_5fdbb577da8c5",
-            "label": "מאגר תוכניות - ב3.6",
+            "label": "מאגר תוכניות - ב3.7",
             "name": "workplans_plan_3",
             "type": "group",
             "instructions": "",
@@ -216,7 +216,7 @@
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "100",
+                                "width": "40",
                                 "class": "",
                                 "id": ""
                             },
@@ -516,7 +516,7 @@
                             "only_front": 0,
                             "display_format": "d\/m\/Y",
                             "return_format": "d\/m\/Y",
-                            "first_day": 1
+                            "first_day": 0
                         },
                         {
                             "key": "field_5fdbb577e43b3",
@@ -645,7 +645,7 @@
                             "only_front": 0,
                             "collapsed": "",
                             "min": 1,
-                            "max": 20,
+                            "max": 7,
                             "layout": "table",
                             "button_label": "הוספת רכיב לתוכנית",
                             "sub_fields": [
@@ -2127,10 +2127,9 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 5,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
@@ -3465,10 +3464,9 @@
                                 "id": ""
                             },
                             "only_front": 0,
-                            "filter_row_edit": "",
                             "collapsed": "",
                             "min": 1,
-                            "max": 17,
+                            "max": 3,
                             "layout": "table",
                             "button_label": "",
                             "sub_fields": [
@@ -4180,10 +4178,9 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 10,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
@@ -4305,10 +4302,9 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 10,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
@@ -4649,10 +4645,9 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 10,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
@@ -4931,10 +4926,9 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 10,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
@@ -5177,7 +5171,7 @@
                                 {
                                     "key": "field_601b1c1de44ff",
                                     "label": "מטרה\/יעד \"אחר\" למיצוי זכויות",
-                                    "name": "wp_channel_4_rights_realize_other_goal",
+                                    "name": "wp_channel_4_rights_social_other_goal",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 1,
@@ -5204,7 +5198,7 @@
                                 {
                                     "key": "field_601b1c1de4500",
                                     "label": "מדדים וערכי סף רצויים",
-                                    "name": "wp_channel_4_rights_realize_other_table",
+                                    "name": "wp_channel_4_rights_social_other_table",
                                     "type": "repeater",
                                     "instructions": "ניתן להוסיף מדד בלחיצה על כפתור \"הוספת שורה חדשה\". כל מדד יופיע בשורה נפרדת.",
                                     "required": 1,
@@ -5217,14 +5211,14 @@
                                     "only_front": 0,
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 5,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
                                         {
                                             "key": "field_601b1c1de4501",
                                             "label": "מה המדד להצלחה?",
-                                            "name": "wp_channel_4_rights_benefits_other_table_goal",
+                                            "name": "wp_channel_4_rights_social_other_table_goal",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 1,
@@ -5251,7 +5245,7 @@
                                         {
                                             "key": "field_601b1c1de4502",
                                             "label": "ערך המדד הרצוי באחוזים",
-                                            "name": "wp_channel_4_rights_benefits_other_table_goal_number",
+                                            "name": "wp_channel_4_rights_social_other_table_goal_number",
                                             "type": "number",
                                             "instructions": "",
                                             "required": 1,
@@ -5370,7 +5364,7 @@
                         },
                         {
                             "key": "field_5fdbb5784feb1",
-                            "label": "מימוש זכויות\/הטבות - אחר",
+                            "label": "התנהלות כלכלית וצרכנות נבונה - אחר",
                             "name": "wp_channel_4_rights_realize_other",
                             "type": "group",
                             "instructions": "",
@@ -5394,7 +5388,7 @@
                             "sub_fields": [
                                 {
                                     "key": "field_5fdbb5793e97c",
-                                    "label": "מטרה\/יעד \"אחר\" למימוש זכויות\/הטבות",
+                                    "label": "מטרה\/יעד \"אחר\" להתנהלות כלכלית וצרכנות נבונה",
                                     "name": "wp_channel_4_rights_realize_other_goal",
                                     "type": "text",
                                     "instructions": "",
@@ -5433,17 +5427,16 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 5,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
                                         {
                                             "key": "field_5fdbb57940cf2",
                                             "label": "מה המדד להצלחה?",
-                                            "name": "wp_channel_4_rights_benefits_other_table_goal",
+                                            "name": "wp_channel_4_rights_realize_other_table_goal",
                                             "type": "text",
                                             "instructions": "",
                                             "required": 1,
@@ -5470,132 +5463,7 @@
                                         {
                                             "key": "field_5fdbb57940d79",
                                             "label": "ערך המדד הרצוי באחוזים",
-                                            "name": "wp_channel_4_rights_benefits_other_table_goal_number",
-                                            "type": "number",
-                                            "instructions": "",
-                                            "required": 1,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "only_front": 0,
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "%",
-                                            "min": "",
-                                            "max": "",
-                                            "step": ""
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "key": "field_5fdbb578500be",
-                            "label": "פיתוח חזון אישי כלכלי - אחר",
-                            "name": "wp_channel_4_finance_vision_other",
-                            "type": "group",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5fdbb5784f6f8",
-                                        "operator": "==",
-                                        "value": "3. אחר"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "100",
-                                "class": "j-purple",
-                                "id": ""
-                            },
-                            "only_front": 0,
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5fdbb5794b308",
-                                    "label": "מטרה\/יעד \"אחר\" לגיבוש חזון אישי כלכלי",
-                                    "name": "wp_channel_4_finance_vision_other_goal",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "100",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "only_front": 0,
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "custom_site_title": 0,
-                                    "custom_site_tagline": 0,
-                                    "custom_title": 0,
-                                    "custom_slug": 0,
-                                    "custom_username": 0,
-                                    "custom_sku": 0,
-                                    "readonly": 0
-                                },
-                                {
-                                    "key": "field_5fdbb5794b392",
-                                    "label": "מדדים וערכי סף רצויים",
-                                    "name": "wp_channel_4_finance_vision_other_table",
-                                    "type": "repeater",
-                                    "instructions": "ניתן להוסיף מדד בלחיצה על כפתור \"הוספת שורה חדשה\". כל מדד יופיע בשורה נפרדת.",
-                                    "required": 1,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "only_front": 0,
-                                    "filter_row_edit": "",
-                                    "collapsed": "",
-                                    "min": 1,
-                                    "max": 5,
-                                    "layout": "table",
-                                    "button_label": "",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_5fdbb5794d6e9",
-                                            "label": "מה המדד להצלחה?",
-                                            "name": "wp_channel_4_finance_vision_other_table_goal",
-                                            "type": "text",
-                                            "instructions": "",
-                                            "required": 1,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "only_front": 0,
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "prepend": "",
-                                            "append": "",
-                                            "maxlength": "",
-                                            "custom_site_title": 0,
-                                            "custom_site_tagline": 0,
-                                            "custom_title": 0,
-                                            "custom_slug": 0,
-                                            "custom_username": 0,
-                                            "custom_sku": 0,
-                                            "readonly": 0
-                                        },
-                                        {
-                                            "key": "field_5fdbb5794d770",
-                                            "label": "ערך המדד הרצוי באחוזים",
-                                            "name": "wp_channel_4_finance_vision_other_table_goal_number",
+                                            "name": "wp_channel_4_rights_realize_other_table_goal_number",
                                             "type": "number",
                                             "instructions": "",
                                             "required": 1,
@@ -5683,10 +5551,9 @@
                                         "id": ""
                                     },
                                     "only_front": 0,
-                                    "filter_row_edit": "",
                                     "collapsed": "",
                                     "min": 1,
-                                    "max": 5,
+                                    "max": 3,
                                     "layout": "table",
                                     "button_label": "",
                                     "sub_fields": [
@@ -5794,7 +5661,7 @@
                             },
                             "only_front": 0,
                             "choices": {
-                                "ללא שותפים (רשות התעסוקה העירונית בלבד)": "ללא שותפים (רשות התעסוקה העירונית בלבד)",
+                                "ללא שותפים": "ללא שותפים",
                                 "שותפים מתוך העירייה": "שותפים מתוך העירייה",
                                 "שותפים מחוץ לעירייה": "שותפים מחוץ לעירייה"
                             },
@@ -5816,13 +5683,13 @@
                                 [
                                     {
                                         "field": "field_5fdbb579db0b4",
-                                        "operator": "==",
-                                        "value": "שותפים מתוך העירייה"
+                                        "operator": "!=",
+                                        "value": "ללא שותפים, הרשות העירונית לתעסוקה בלבד"
                                     },
                                     {
                                         "field": "field_5fdbb579db0b4",
-                                        "operator": "!=",
-                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                        "operator": "==",
+                                        "value": "שותפים מתוך העירייה"
                                     }
                                 ]
                             ],
@@ -5852,7 +5719,7 @@
                                     {
                                         "field": "field_5fdbb579db0b4",
                                         "operator": "!=",
-                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                        "value": "ללא שותפים"
                                     }
                                 ]
                             ],
@@ -5863,10 +5730,11 @@
                             },
                             "only_front": 0,
                             "choices": {
-                                "אגף רווחה": "אגף רווחה",
-                                "אגף קליטה": "אגף קליטה",
+                                "אגף בריאות הציבור": "אגף בריאות הציבור",
+                                "אגף הרווחה": "אגף הרווחה",
                                 "אגף לקידום עסקים": "אגף לקידום עסקים",
-                                "רשות צעירים": "רשות צעירים",
+                                "הרשות העירונית לקליטה ועליה": "הרשות העירונית לקליטה ועליה",
+                                "רשות הצעירים": "רשות הצעירים",
                                 "אחר": "אחר"
                             },
                             "allow_custom": 0,
@@ -5893,7 +5761,7 @@
                                     {
                                         "field": "field_5fdbb579db0b4",
                                         "operator": "!=",
-                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                        "value": "ללא שותפים"
                                     }
                                 ]
                             ],
@@ -5903,10 +5771,9 @@
                                 "id": ""
                             },
                             "only_front": 0,
-                            "filter_row_edit": "",
                             "collapsed": "",
                             "min": 1,
-                            "max": 10,
+                            "max": 4,
                             "layout": "table",
                             "button_label": "הוספת שותף נוסף",
                             "sub_fields": [
@@ -5977,13 +5844,13 @@
                                 [
                                     {
                                         "field": "field_5fdbb579db0b4",
-                                        "operator": "==",
-                                        "value": "שותפים מחוץ לעירייה"
+                                        "operator": "!=",
+                                        "value": "ללא שותפים, הרשות העירונית לתעסוקה בלבד"
                                     },
                                     {
                                         "field": "field_5fdbb579db0b4",
-                                        "operator": "!=",
-                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                        "operator": "==",
+                                        "value": "שותפים מחוץ לעירייה"
                                     }
                                 ]
                             ],
@@ -6013,7 +5880,7 @@
                                     {
                                         "field": "field_5fdbb579db0b4",
                                         "operator": "!=",
-                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                        "value": "ללא שותפים"
                                     }
                                 ]
                             ],
@@ -6028,6 +5895,9 @@
                                 "המשרד לשוויון חברתי": "המשרד לשוויון חברתי",
                                 "המשרד לפיתוח הפריפריה, הנגב והגליל": "המשרד לפיתוח הפריפריה, הנגב והגליל",
                                 "משרד ירושלים ומורשת": "משרד ירושלים ומורשת",
+                                "שירות התעסוקה": "שירות התעסוקה",
+                                "מט\"י": "מט\"י",
+                                "ג'וינט": "ג'וינט",
                                 "מינהלים קהילתיים": "מינהלים קהילתיים",
                                 "אחר": "אחר"
                             },
@@ -6055,7 +5925,7 @@
                                     {
                                         "field": "field_5fdbb579db0b4",
                                         "operator": "!=",
-                                        "value": "ללא שותפים (רשות התעסוקה העירונית בלבד)"
+                                        "value": "ללא שותפים"
                                     }
                                 ]
                             ],
@@ -6065,10 +5935,9 @@
                                 "id": ""
                             },
                             "only_front": 0,
-                            "filter_row_edit": "",
                             "collapsed": "",
                             "min": 1,
-                            "max": 10,
+                            "max": 4,
                             "layout": "table",
                             "button_label": "הוספת שותף נוסף",
                             "sub_fields": [
@@ -6893,5 +6762,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613591255
+    "modified": 1614443404
 }

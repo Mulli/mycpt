@@ -113,12 +113,12 @@ add_filter( 'jwt_auth_token_before_dispatch', 'jwt_auth_function', 10, 2 );
 
 add_action( 'init', 'create_digma_post_types' );
 
-$digma_post_types = array(  //"referrals" => "referral",
-							//"families" => "family",
+$digma_post_types = array(  "referrals" => "referral",
+							"families" => "family",
 							"WorkplansDefs" => "WorkplansDef",
 							"WorkplansRuns" => "WorkplansRun",
-							//"parents" => "parent",
-							//"intakes" => "intake",
+							"parents" => "parent",
+							"intakes" => "intake",
 							"stats" => "stat",
 							//"families0" => "family0",
 							//"families1" => "family1",
@@ -137,7 +137,7 @@ $digma_post_types = array(  //"referrals" => "referral",
                                                         "familylogs" => "familylog"
                                                         */
 							//"team" => "member",
-							//"combos" => "combo"
+							"combos" => "combo"
 							);
 
 $did_create_digma_post_types = 0;

@@ -1,0 +1,127 @@
+{
+    "key": "group_60414d9bd615b",
+    "title": "פרטי קשר",
+    "fields": [
+        {
+            "key": "field_60414dd9331f1",
+            "label": "תפקיד",
+            "name": "role",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "custom_site_title": 0,
+            "custom_site_tagline": 0,
+            "custom_title": 0,
+            "custom_slug": 0,
+            "custom_username": 0,
+            "custom_sku": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_60414daa331f0",
+            "label": "שם",
+            "name": "name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "custom_site_title": 0,
+            "custom_site_tagline": 0,
+            "custom_title": 0,
+            "custom_slug": 0,
+            "custom_username": 0,
+            "custom_sku": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_60414df2331f2",
+            "label": "טלפון",
+            "name": "phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "custom_site_title": 0,
+            "custom_site_tagline": 0,
+            "custom_title": 0,
+            "custom_slug": 0,
+            "custom_username": 0,
+            "custom_sku": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_60414e09331f3",
+            "label": "דוא\"ל",
+            "name": "email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "only_front": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "custom_email": 0,
+            "custom_author_email": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1614892597
+}

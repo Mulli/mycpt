@@ -1138,7 +1138,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 	
     public function mbo_getWPacfjson( WP_REST_Request $request ) {
 		/*if (false !== ($res = get_transient( 'referral_names' ))) {
-			error_log("mbo_getRnames: using cache");
+			error_log("mbo_getWPacfjson: using cache");
 			return $res; // use cache
 	  	} */
 		$body = $request->get_body();
@@ -1200,12 +1200,14 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 				);
 			} 
 			if ($v == 3){
+				$tgaud = isset($x["fg_target_audience"]["wp_social_section_new"]) && isset($x["fg_target_audience"]["wp_social_section_new"][0]) 
+						? $x["fg_target_audience"]["wp_social_section_new"][0] : "";
 				$item = array(
 					"id" => $cpt->ID,
 					"f" => $x["fg_intro"]["wp_name"],
 					"all" => $x["fg_target_audience"]["wp_targetaud"], // if open to all
 					"w" => $x["fg_target_audience"]["wp_gender_new"],
-					"m" => isset($x["fg_target_audience"]["wp_social_section_new"]) ? $x["fg_target_audience"]["wp_social_section_new"][0] : "",
+					"m" => $tgaud, // isset($x["fg_target_audience"]["wp_social_section_new"]) ? $x["fg_target_audience"]["wp_social_section_new"][0] : "",
 					"os" => $x["fg_desc"]["wp_operation_status"],
 					"s" => $x["fg_desc"]["wp_status_new"],
 					"g" => $x["fg_wp_components"]['wp_solution_type'],//$x["wp_channel"],
@@ -1223,7 +1225,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 		set_transient( 'wp3_2_names', $res, 60*15 ); // 15 min was 60*12 - 12 hours
 		// return json array of items
 		
-		return $res; // json_encode($res); // "Got mbo_getRnames OK, referrals=". count($referralsCpt) ;
+		return $res; // json_encode($res); // "Got mbo_getWPacfjson OK, referrals=". count($referralsCpt) ;
 	}
 	
 // mbo_getRnames
@@ -1233,7 +1235,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 			return $res; // use cache
 	  	} 
 		$body = $request->get_body();
-		//write_log( "mbo_getRnames:" . $body );
+		error_log( "mbo_getRnames body:" . print_r($body,true) );
 	
 		//$args = array( 'posts_per_page' => -1, 'category' => 26 ); // referrals category
 		$referralsCpt = get_posts( array('post_type' => 'digma_referrals', 'posts_per_page' => -1,
@@ -1253,7 +1255,7 @@ class ACF_Rest_Server extends WP_Rest_Controller {
 				"s" => $x["family_referral_status"]
 			);
 			array_push($res,$item);
-			/////write_log($item);
+			write_log($item);
 			//write_log("fanme=". $x["family_referral_family_name"] . "<< womaname=" . $x["family_referral_woman_firstname"]);
 			// add post id, family name & parents name & status & creation time??
 		}

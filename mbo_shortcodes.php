@@ -1,4 +1,5 @@
 <?php
+include_once "shortcodes/delet2xl.php";
 include_once "shortcodes/startapp.php"; // iframe for latest index.html
 include_once "shortcodes/intro.php";
 include_once "shortcodes/xl-intakes2.php"; // good
